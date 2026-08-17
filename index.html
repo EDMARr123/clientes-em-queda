@@ -142,11 +142,11 @@ tbody tr:hover { background: var(--surface-2); }
   box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--ink);
 }
 .filtro-rca {
-  appearance: none; border: 1px solid var(--border); background: var(--surface); color: var(--ink);
-  font: inherit; font-size: 12.5px; font-weight: 700; padding: 7px 14px; border-radius: 999px; cursor: pointer;
+  appearance: none; border: 2px solid var(--critico); background: var(--surface); color: var(--ink);
+  font: inherit; font-size: 12.5px; font-weight: 800; padding: 7px 14px; border-radius: 999px; cursor: pointer;
   margin-left: auto;
 }
-.filtro-rca:hover { border-color: var(--accent); }
+.filtro-rca:hover { border-color: var(--critico); filter: brightness(0.97); }
 
 footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-align: center; }
 </style>
@@ -1197,7 +1197,7 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
 </div>
 
 <script>
-const RESUMO_POR_RCA = {"todos": {"em_queda": 89, "sumiram": 8, "caiu_3": 29, "caiu_2": 27, "caiu_1": 25, "perda_fat": "R$ -75.766,48", "criticos": 37, "total_clientes": 161}, "PAULO RONAN": {"em_queda": 51, "sumiram": 3, "caiu_3": 16, "caiu_2": 16, "caiu_1": 16, "perda_fat": "R$ -44.934,99", "criticos": 19, "total_clientes": 83}, "JOAO GABRIEL": {"em_queda": 38, "sumiram": 5, "caiu_3": 13, "caiu_2": 11, "caiu_1": 9, "perda_fat": "R$ -30.831,50", "criticos": 18, "total_clientes": 78}};
+const RESUMO_POR_RCA = {"todos": {"em_queda": 89, "sumiram": 8, "caiu_3": 29, "caiu_2": 27, "caiu_1": 25, "perda_fat": "R$ -75.766,48", "criticos": 37, "total_clientes": 161}, "JOAO GABRIEL": {"em_queda": 38, "sumiram": 5, "caiu_3": 13, "caiu_2": 11, "caiu_1": 9, "perda_fat": "R$ -30.831,50", "criticos": 18, "total_clientes": 78}, "PAULO RONAN": {"em_queda": 51, "sumiram": 3, "caiu_3": 16, "caiu_2": 16, "caiu_1": 16, "perda_fat": "R$ -44.934,99", "criticos": 19, "total_clientes": 83}};
 let filtroSeveridade = "todos";
 let filtroRca = "todos";
 
