@@ -134,15 +134,13 @@ tbody tr:hover { background: var(--surface-2); }
 }
 .filtro-btn:hover { border-color: var(--accent); color: var(--accent); }
 .filtro-btn.ativo { background: var(--accent); border-color: var(--accent); color: #fff; }
-.filtro-btn[data-filtro="critico"] { color: var(--critico); border-color: var(--critico); font-weight: 800; }
-.filtro-btn[data-filtro="critico"]:hover { color: var(--critico); border-color: var(--critico); }
-.filtro-btn[data-filtro="critico"].ativo { background: var(--critico); border-color: var(--critico); color: #fff; }
-.filtro-btn[data-filtro="atencao"] { color: var(--atencao); border-color: var(--atencao); font-weight: 800; }
-.filtro-btn[data-filtro="atencao"]:hover { color: var(--atencao); border-color: var(--atencao); }
-.filtro-btn[data-filtro="atencao"].ativo { background: var(--atencao); border-color: var(--atencao); color: #fff; }
-.filtro-btn[data-filtro="leve"] { color: var(--leve); border-color: var(--leve); font-weight: 800; }
-.filtro-btn[data-filtro="leve"]:hover { color: var(--leve); border-color: var(--leve); }
-.filtro-btn[data-filtro="leve"].ativo { background: var(--leve); border-color: var(--leve); color: #fff; }
+.filtro-btn[data-filtro="critico"] { background: var(--critico); border-color: var(--critico); color: #fff; font-weight: 800; }
+.filtro-btn[data-filtro="atencao"] { background: var(--atencao); border-color: var(--atencao); color: #fff; font-weight: 800; }
+.filtro-btn[data-filtro="leve"] { background: var(--leve); border-color: var(--leve); color: #fff; font-weight: 800; }
+.filtro-btn[data-filtro="critico"]:hover, .filtro-btn[data-filtro="atencao"]:hover, .filtro-btn[data-filtro="leve"]:hover { filter: brightness(0.92); }
+.filtro-btn[data-filtro="critico"].ativo, .filtro-btn[data-filtro="atencao"].ativo, .filtro-btn[data-filtro="leve"].ativo {
+  box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--ink);
+}
 .filtro-rca {
   appearance: none; border: 1px solid var(--border); background: var(--surface); color: var(--ink);
   font: inherit; font-size: 12.5px; font-weight: 700; padding: 7px 14px; border-radius: 999px; cursor: pointer;
