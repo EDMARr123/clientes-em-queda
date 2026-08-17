@@ -84,13 +84,13 @@ header p { margin: 0; color: var(--ink-soft); font-size: 14.5px; }
 header .periodos { font-weight: 700; color: var(--ink); }
 
 .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin: 24px 0; }
-.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); padding: 16px 18px; }
+.kpi { background: var(--surface); border: 2px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); padding: 16px 18px; }
 .kpi .n { font-size: 26px; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
 .kpi .l { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); margin-top: 4px; }
-.kpi.critico { border-top: 3px solid var(--critico); }
+.kpi.critico { border: 2px solid var(--critico); }
 .kpi.critico .n { color: var(--critico); }
-.kpi.atencao { border-top: 3px solid var(--atencao); }
-.kpi.total { border-top: 3px solid var(--accent); }
+.kpi.atencao { border: 2px solid var(--atencao); }
+.kpi.total { border: 2px solid var(--accent); }
 
 .legenda { display: flex; gap: 16px; flex-wrap: wrap; margin: 4px 0 18px; font-size: 12.5px; color: var(--ink-soft); }
 .legenda span { display: inline-flex; align-items: center; gap: 6px; }
@@ -1199,7 +1199,7 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
 </div>
 
 <script>
-const RESUMO_POR_RCA = {"todos": {"em_queda": 89, "sumiram": 8, "caiu_3": 29, "caiu_2": 27, "caiu_1": 25, "perda_fat": "R$ -75.766,48", "criticos": 37, "total_clientes": 161}, "JOAO GABRIEL": {"em_queda": 38, "sumiram": 5, "caiu_3": 13, "caiu_2": 11, "caiu_1": 9, "perda_fat": "R$ -30.831,50", "criticos": 18, "total_clientes": 78}, "PAULO RONAN": {"em_queda": 51, "sumiram": 3, "caiu_3": 16, "caiu_2": 16, "caiu_1": 16, "perda_fat": "R$ -44.934,99", "criticos": 19, "total_clientes": 83}};
+const RESUMO_POR_RCA = {"todos": {"em_queda": 89, "sumiram": 8, "caiu_3": 29, "caiu_2": 27, "caiu_1": 25, "perda_fat": "R$ -75.766,48", "criticos": 37, "total_clientes": 161}, "PAULO RONAN": {"em_queda": 51, "sumiram": 3, "caiu_3": 16, "caiu_2": 16, "caiu_1": 16, "perda_fat": "R$ -44.934,99", "criticos": 19, "total_clientes": 83}, "JOAO GABRIEL": {"em_queda": 38, "sumiram": 5, "caiu_3": 13, "caiu_2": 11, "caiu_1": 9, "perda_fat": "R$ -30.831,50", "criticos": 18, "total_clientes": 78}};
 let filtroSeveridade = "todos";
 let filtroRca = "todos";
 
