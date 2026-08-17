@@ -162,35 +162,35 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
 
   <section class="kpis">
     <div class="kpi total">
-      <div class="n" id="kpiEmQueda">381 / 620</div>
+      <div class="n" id="kpiEmQueda">532 / 846</div>
       <div class="l">Clientes em queda</div>
     </div>
     <div class="kpi critico">
-      <div class="n" id="kpiSumiram">25</div>
+      <div class="n" id="kpiSumiram">28</div>
       <div class="l">Pararam de comprar</div>
     </div>
     <div class="kpi critico">
-      <div class="n" id="kpiCaiu3">141</div>
+      <div class="n" id="kpiCaiu3">196</div>
       <div class="l">Caíram nas 3 métricas</div>
     </div>
     <div class="kpi atencao">
-      <div class="n" id="kpiCaiu2">109</div>
+      <div class="n" id="kpiCaiu2">157</div>
       <div class="l">Caíram em 2 métricas</div>
     </div>
     <div class="kpi critico">
-      <div class="n" id="kpiPerdaFat">R$ -272.592,52</div>
+      <div class="n" id="kpiPerdaFat">R$ -428.111,77</div>
       <div class="l">Faturamento perdido/mês</div>
     </div>
   </section>
 
   <div class="filtros" id="filtros">
-    <button class="filtro-btn ativo" data-filtro="todos">Todos (<span id="contTodos">381</span>)</button>
-    <button class="filtro-btn" data-filtro="critico">Crítico (<span id="contCritico">166</span>)</button>
-    <button class="filtro-btn" data-filtro="atencao">Atenção (<span id="contAtencao">109</span>)</button>
-    <button class="filtro-btn" data-filtro="leve">Leve (<span id="contLeve">106</span>)</button>
+    <button class="filtro-btn ativo" data-filtro="todos">Todos (<span id="contTodos">532</span>)</button>
+    <button class="filtro-btn" data-filtro="critico">Crítico (<span id="contCritico">224</span>)</button>
+    <button class="filtro-btn" data-filtro="atencao">Atenção (<span id="contAtencao">157</span>)</button>
+    <button class="filtro-btn" data-filtro="leve">Leve (<span id="contLeve">151</span>)</button>
     <select class="filtro-rca" id="filtroRca">
       <option value="todos">Todos os vendedores</option>
-      <option value="BERALDO">BERALDO</option><option value="CELISMAR">CELISMAR</option><option value="FABIANO">FABIANO</option><option value="JOAO GABRIEL">JOAO GABRIEL</option><option value="MATEUS ARIEL">MATEUS ARIEL</option><option value="PAULO RONAN">PAULO RONAN</option><option value="WESLEY">WESLEY</option><option value="WILLIAN MACEDO">WILLIAN MACEDO</option>
+      <option value="BERALDO">BERALDO</option><option value="CELISMAR">CELISMAR</option><option value="FABIANO">FABIANO</option><option value="JOAO GABRIEL">JOAO GABRIEL</option><option value="JOAO VITOR">JOAO VITOR</option><option value="MATEUS ARIEL">MATEUS ARIEL</option><option value="PAULO RONAN">PAULO RONAN</option><option value="TIAGO">TIAGO</option><option value="WESLEY">WESLEY</option><option value="WILLIAN MACEDO">WILLIAN MACEDO</option>
     </select>
   </div>
 
@@ -210,6 +210,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         </tr>
       </thead>
       <tbody id="corpo-tabela">
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">AVAMTHE SUP.</span><span class="nome-razao">SUPERMERCADO AVANTE LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Parou de comprar</span></td>
+        <td class="num">7,3 → 0,0</td>
+        <td class="num delta-neg">-100.0%</td>
+        <td class="num">24,7 → 0,0</td>
+        <td class="num delta-neg">-100.0%</td>
+        <td class="num">R$ 9.054,34 → R$ 0,00</td>
+        <td class="num delta-neg">-100.0%</td>
+      </tr>
       <tr class="row-critico" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">GRILL SERVIC</span><span class="nome-razao">A F COMERCIO E SERVICOS EIRELI - ME</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -263,6 +274,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">6,5 → 0,0</td>
         <td class="num delta-neg">-100.0%</td>
         <td class="num">R$ 1.024,24 → R$ 0,00</td>
+        <td class="num delta-neg">-100.0%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE MENDANHA</span><span class="nome-razao">RESTAURANTE MENDANHA GOIANIA LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Parou de comprar</span></td>
+        <td class="num">3,0 → 0,0</td>
+        <td class="num delta-neg">-100.0%</td>
+        <td class="num">5,6 → 0,0</td>
+        <td class="num delta-neg">-100.0%</td>
+        <td class="num">R$ 968,15 → R$ 0,00</td>
         <td class="num delta-neg">-100.0%</td>
       </tr>
       <tr class="row-critico" data-rca="CELISMAR">
@@ -419,6 +441,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 191,00 → R$ 0,00</td>
         <td class="num delta-neg">-100.0%</td>
       </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNE JERUSALEM</span><span class="nome-razao">ADEROALDO PEREIRA DA SILVA ME</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Parou de comprar</span></td>
+        <td class="num">1,3 → 0,0</td>
+        <td class="num delta-neg">-100.0%</td>
+        <td class="num">1,0 → 0,0</td>
+        <td class="num delta-neg">-100.0%</td>
+        <td class="num">R$ 182,33 → R$ 0,00</td>
+        <td class="num delta-neg">-100.0%</td>
+      </tr>
       <tr class="row-critico" data-rca="MATEUS ARIEL">
         <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE CAVALO DE FOGO</span><span class="nome-razao">46.859.190 NAJLA VITORIA EMES NASCIMENTO</span></td>
         <td class="col-rca">MATEUS ARIEL</td>
@@ -485,6 +518,39 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 44,90 → R$ 0,00</td>
         <td class="num delta-neg">-100.0%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">SUPER KATITU</span><span class="nome-razao">GUAPO COMERCIO DE ALIMENTOS LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">4,0 → 2,0</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">28,8 → 15,2</td>
+        <td class="num delta-neg">-47.2%</td>
+        <td class="num">R$ 27.424,63 → R$ 8.259,72</td>
+        <td class="num delta-neg">-69.9%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">GOIABAO SUPERMERCADO</span><span class="nome-razao">ALIMENTOS OESTE LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">9,7 → 9,0</td>
+        <td class="num delta-neg">-6.9%</td>
+        <td class="num">15,1 → 12,5</td>
+        <td class="num delta-neg">-17.2%</td>
+        <td class="num">R$ 19.553,72 → R$ 13.207,33</td>
+        <td class="num delta-neg">-32.5%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">ARATO EMPORIO &amp; CARNES</span><span class="nome-razao">ARATO COMERCIO DE PRODUTOS ALIMENTICIOS</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">7,3 → 4,3</td>
+        <td class="num delta-neg">-40.9%</td>
+        <td class="num">7,9 → 4,5</td>
+        <td class="num delta-neg">-43.6%</td>
+        <td class="num">R$ 9.947,04 → R$ 3.873,00</td>
+        <td class="num delta-neg">-61.1%</td>
+      </tr>
       <tr class="row-critico" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">SUPERVI 14</span><span class="nome-razao">SUPERVI DISTRIBUIDOR DE ALIMENTOS LTDA</span></td>
         <td class="col-rca">FABIANO</td>
@@ -528,6 +594,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-18.5%</td>
         <td class="num">R$ 9.737,04 → R$ 5.279,18</td>
         <td class="num delta-neg">-45.8%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">MURANO RESTAURANTE</span><span class="nome-razao">SRE RESTAURANTE LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,7 → 1,0</td>
+        <td class="num delta-neg">-62.5%</td>
+        <td class="num">5,8 → 3,0</td>
+        <td class="num delta-neg">-47.8%</td>
+        <td class="num">R$ 5.616,41 → R$ 1.403,88</td>
+        <td class="num delta-neg">-75.0%</td>
       </tr>
       <tr class="row-critico" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">CELSON E CIA BAR</span><span class="nome-razao">CELSON BATISTA E SILVA &amp; CIA LTDA</span></td>
@@ -628,6 +705,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 3.455,11 → R$ 535,63</td>
         <td class="num delta-neg">-84.5%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">BEIRUT RESTAURANTE</span><span class="nome-razao">BEIRUT RESTAURANTE LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">4,3 → 3,7</td>
+        <td class="num delta-neg">-15.4%</td>
+        <td class="num">8,6 → 7,1</td>
+        <td class="num delta-neg">-17.7%</td>
+        <td class="num">R$ 7.917,16 → R$ 5.022,58</td>
+        <td class="num delta-neg">-36.6%</td>
+      </tr>
       <tr class="row-critico" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUP. ANDORINHA</span><span class="nome-razao">ANDORINHA COMERCIO VAREJISTA LTDA</span></td>
         <td class="col-rca">WESLEY</td>
@@ -638,6 +726,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-12.7%</td>
         <td class="num">R$ 4.014,67 → R$ 1.136,64</td>
         <td class="num delta-neg">-71.7%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">FRANGO MAIS CHICKERIA</span><span class="nome-razao">FRANGO MAIS CHICKERIA &amp; ROTISSERIE LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">6,7 → 1,0</td>
+        <td class="num delta-neg">-85.0%</td>
+        <td class="num">2,4 → 2,0</td>
+        <td class="num delta-neg">-14.9%</td>
+        <td class="num">R$ 3.323,02 → R$ 527,33</td>
+        <td class="num delta-neg">-84.1%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. CASARAO</span><span class="nome-razao">SUPERMERCADO CASARAO LTDA ME</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">9,3 → 8,3</td>
+        <td class="num delta-neg">-10.7%</td>
+        <td class="num">20,2 → 16,8</td>
+        <td class="num delta-neg">-16.9%</td>
+        <td class="num">R$ 11.294,38 → R$ 8.531,95</td>
+        <td class="num delta-neg">-24.5%</td>
       </tr>
       <tr class="row-critico" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">EMPORIO CENTER</span><span class="nome-razao">RODRIGO DA SILVA DINIZ 01089534167</span></td>
@@ -705,6 +815,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 2.553,71 → R$ 423,72</td>
         <td class="num delta-neg">-83.4%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">PANIF. E LANCHONETE SABOROSA</span><span class="nome-razao">PAULO AUGUSTO BURANELI ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">4,0 → 1,0</td>
+        <td class="num delta-neg">-75.0%</td>
+        <td class="num">4,0 → 1,0</td>
+        <td class="num delta-neg">-75.0%</td>
+        <td class="num">R$ 2.595,50 → R$ 547,00</td>
+        <td class="num delta-neg">-78.9%</td>
+      </tr>
       <tr class="row-critico" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE JR TRADICAO</span><span class="nome-razao">JUNIOR JOSE DE SOUZA ME</span></td>
         <td class="col-rca">FABIANO</td>
@@ -738,6 +859,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 2.019,12 → R$ 167,22</td>
         <td class="num delta-neg">-91.7%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">SUPERMECADO IMPERIAL</span><span class="nome-razao">J A BERNARDINO SUPERMERCADO LTDA ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,7 → 1,3</td>
+        <td class="num delta-neg">-63.6%</td>
+        <td class="num">4,3 → 1,0</td>
+        <td class="num delta-neg">-76.6%</td>
+        <td class="num">R$ 2.575,24 → R$ 753,67</td>
+        <td class="num delta-neg">-70.7%</td>
+      </tr>
       <tr class="row-critico" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">CLUBE DE ENGENHARIA DE GOIAS</span><span class="nome-razao">CLUBE DE ENGENHARIA DE GOIAS</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -770,6 +902,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-6.8%</td>
         <td class="num">R$ 7.245,89 → R$ 5.461,42</td>
         <td class="num delta-neg">-24.6%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">ATACADAO DAS CARNES</span><span class="nome-razao">ADIERLON JUNIOR DA SILVA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">5,0 → 4,0</td>
+        <td class="num delta-neg">-20.0%</td>
+        <td class="num">9,7 → 9,0</td>
+        <td class="num delta-neg">-7.5%</td>
+        <td class="num">R$ 7.161,86 → R$ 5.499,47</td>
+        <td class="num delta-neg">-23.2%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">PURE DETOX ALIMENTACAO SAUDAVEL</span><span class="nome-razao">PURE DETOX ALIMENTACAO LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,3 → 1,7</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">3,5 → 2,0</td>
+        <td class="num delta-neg">-42.9%</td>
+        <td class="num">R$ 3.740,33 → R$ 2.085,45</td>
+        <td class="num delta-neg">-44.2%</td>
       </tr>
       <tr class="row-critico" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">COLOMBUS</span><span class="nome-razao">COLOMBU S RESTAURANTE LTDA</span></td>
@@ -826,6 +980,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 2.447,79 → R$ 984,10</td>
         <td class="num delta-neg">-59.8%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">EXECUTIVOS BAR</span><span class="nome-razao">EXECUTIVOS BAR LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,0 → 0,7</td>
+        <td class="num delta-neg">-66.7%</td>
+        <td class="num">3,5 → 2,0</td>
+        <td class="num delta-neg">-42.9%</td>
+        <td class="num">R$ 2.157,10 → R$ 713,60</td>
+        <td class="num delta-neg">-66.9%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">BAR DO PEIXE</span><span class="nome-razao">57.265.235 WANESSA KARITA BORGES</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">7,7 → 5,7</td>
+        <td class="num delta-neg">-26.1%</td>
+        <td class="num">3,4 → 3,1</td>
+        <td class="num delta-neg">-9.8%</td>
+        <td class="num">R$ 3.300,76 → R$ 1.879,93</td>
+        <td class="num delta-neg">-43.0%</td>
+      </tr>
       <tr class="row-critico" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">SUP. ACIOLI</span><span class="nome-razao">IVONALDO DA SILVA SOUSA</span></td>
         <td class="col-rca">CELISMAR</td>
@@ -837,6 +1013,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 3.669,81 → R$ 2.258,86</td>
         <td class="num delta-neg">-38.4%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNE BANDEIRAS</span><span class="nome-razao">CASA DE CARNE BANDEIRAS LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,7 → 1,7</td>
+        <td class="num delta-neg">-54.5%</td>
+        <td class="num">2,5 → 1,6</td>
+        <td class="num delta-neg">-34.8%</td>
+        <td class="num">R$ 1.760,72 → R$ 401,17</td>
+        <td class="num delta-neg">-77.2%</td>
+      </tr>
       <tr class="row-critico" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNES NOBRE BOI</span><span class="nome-razao">CASA DE CARNES NOBRE BOI LTDA</span></td>
         <td class="col-rca">CELISMAR</td>
@@ -847,6 +1034,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-27.9%</td>
         <td class="num">R$ 4.095,85 → R$ 2.751,75</td>
         <td class="num delta-neg">-32.8%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">MERCEARIA E DISTRIBUIDORA AVENIDA</span><span class="nome-razao">MERCEARIA E DISTRIBUIDORA AVENIDA EIRELI</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,3 → 1,3</td>
+        <td class="num delta-neg">-60.0%</td>
+        <td class="num">10,8 → 4,8</td>
+        <td class="num delta-neg">-56.0%</td>
+        <td class="num">R$ 1.920,61 → R$ 602,56</td>
+        <td class="num delta-neg">-68.6%</td>
       </tr>
       <tr class="row-critico" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">MAJU CARNES</span><span class="nome-razao">MAJU CARNES LTDA</span></td>
@@ -969,6 +1167,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 2.479,54 → R$ 1.418,06</td>
         <td class="num delta-neg">-42.8%</td>
       </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">TATA GATRO BAR</span><span class="nome-razao">JULIANA ALVES TOLEDO 04860259181</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,3 → 0,3</td>
+        <td class="num delta-neg">-85.7%</td>
+        <td class="num">3,0 → 2,0</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">R$ 1.305,62 → R$ 263,50</td>
+        <td class="num delta-neg">-79.8%</td>
+      </tr>
       <tr class="row-critico" data-rca="JOAO GABRIEL">
         <td class="col-cliente"><span class="nome-fantasia">CANTINAS OBJETIVO</span><span class="nome-razao">CANTINAS OBJETIVO LTDA</span></td>
         <td class="col-rca">JOAO GABRIEL</td>
@@ -1035,6 +1244,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 10.699,72 → R$ 9.757,12</td>
         <td class="num delta-neg">-8.8%</td>
       </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. GAGAL (APARTIR DAS 830)</span><span class="nome-razao">SUPERMERCADO GAGAL LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,0 → 2,3</td>
+        <td class="num delta-neg">-22.2%</td>
+        <td class="num">9,7 → 5,1</td>
+        <td class="num delta-neg">-46.8%</td>
+        <td class="num">R$ 1.648,75 → R$ 746,33</td>
+        <td class="num delta-neg">-54.7%</td>
+      </tr>
       <tr class="row-critico" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE ARABE</span><span class="nome-razao">MARCELO DE ALCANTARA ABRAO &amp; CIA LTDA - ME</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -1079,6 +1299,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 2.181,41 → R$ 1.328,30</td>
         <td class="num delta-neg">-39.1%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">JANTINHA SAMPAIO</span><span class="nome-razao">ANTONIO FERNANDES GOMES NETO</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,7 → 2,3</td>
+        <td class="num delta-neg">-36.4%</td>
+        <td class="num">2,7 → 1,3</td>
+        <td class="num delta-neg">-52.9%</td>
+        <td class="num">R$ 1.871,77 → R$ 1.032,00</td>
+        <td class="num delta-neg">-44.9%</td>
+      </tr>
       <tr class="row-critico" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">EVEREST</span><span class="nome-razao">54.163.428 LIDIA MAYARA TORRES VIEIRA</span></td>
         <td class="col-rca">CELISMAR</td>
@@ -1100,6 +1331,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-7.7%</td>
         <td class="num">R$ 936,18 → R$ 124,82</td>
         <td class="num delta-neg">-86.7%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. MENDES</span><span class="nome-razao">SUPERMERCADO MENDES LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,3 → 2,7</td>
+        <td class="num delta-neg">-20.0%</td>
+        <td class="num">9,9 → 9,2</td>
+        <td class="num delta-neg">-6.6%</td>
+        <td class="num">R$ 2.720,41 → R$ 1.910,44</td>
+        <td class="num delta-neg">-29.8%</td>
       </tr>
       <tr class="row-critico" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">BAR E RESTAURANTE NOVA ESTRELA</span><span class="nome-razao">ROSILANDIA DE PAIVA VALE 00206745117</span></td>
@@ -1156,6 +1398,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 3.116,18 → R$ 2.354,82</td>
         <td class="num delta-neg">-24.4%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">AC ALIMENTOS</span><span class="nome-razao">ALDO CAMPOS 2603914115</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,0 → 1,0</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">3,2 → 1,3</td>
+        <td class="num delta-neg">-57.9%</td>
+        <td class="num">R$ 1.131,13 → R$ 372,52</td>
+        <td class="num delta-neg">-67.1%</td>
+      </tr>
       <tr class="row-critico" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">PANIF. E LANCHONETE PAO NOSSO</span><span class="nome-razao">ADAO TEODORO DE OLIVEIRA - ME</span></td>
         <td class="col-rca">WESLEY</td>
@@ -1177,6 +1430,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-52.9%</td>
         <td class="num">R$ 1.792,88 → R$ 1.061,49</td>
         <td class="num delta-neg">-40.8%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">REDE JAIME</span><span class="nome-razao">DR JAIME SUPERMERCADO LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">5,3 → 4,3</td>
+        <td class="num delta-neg">-18.8%</td>
+        <td class="num">22,1 → 21,3</td>
+        <td class="num delta-neg">-3.7%</td>
+        <td class="num">R$ 17.557,55 → R$ 16.847,59</td>
+        <td class="num delta-neg">-4.0%</td>
       </tr>
       <tr class="row-critico" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">BURGERS FAST GRILL</span><span class="nome-razao">BURGERS FAST GRILL EIRELI</span></td>
@@ -1221,6 +1485,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-39.7%</td>
         <td class="num">R$ 1.979,40 → R$ 1.328,36</td>
         <td class="num delta-neg">-32.9%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">CAMPEAO SUP.</span><span class="nome-razao">SUPERMERCADO CAMPEAO 2 LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">5,0 → 4,0</td>
+        <td class="num delta-neg">-20.0%</td>
+        <td class="num">22,3 → 14,8</td>
+        <td class="num delta-neg">-33.6%</td>
+        <td class="num">R$ 5.044,40 → R$ 4.405,02</td>
+        <td class="num delta-neg">-12.7%</td>
       </tr>
       <tr class="row-critico" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">TEXAS MERCEARIA EMBALAGES E FRIOS</span><span class="nome-razao">TEXAS MERCEARIA EMBALAGENS E FRIOS LTDA</span></td>
@@ -1354,6 +1629,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 847,80 → R$ 312,66</td>
         <td class="num delta-neg">-63.1%</td>
       </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE DA FAMILIA</span><span class="nome-razao">LETICIA R DOS SANTOS</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">1,0 → 0,3</td>
+        <td class="num delta-neg">-66.7%</td>
+        <td class="num">3,3 → 1,0</td>
+        <td class="num delta-neg">-70.0%</td>
+        <td class="num">R$ 782,71 → R$ 299,60</td>
+        <td class="num delta-neg">-61.7%</td>
+      </tr>
       <tr class="row-critico" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUP. SAO CAETANO</span><span class="nome-razao">SUPERMERCADO SAO CAETANO LTDA - ME</span></td>
         <td class="col-rca">WESLEY</td>
@@ -1420,6 +1706,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.523,10 → R$ 1.086,19</td>
         <td class="num delta-neg">-28.7%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">KISABOR PAES E DOCES</span><span class="nome-razao">KISABOR PAES E DOCES LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,0 → 1,0</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">2,3 → 1,0</td>
+        <td class="num delta-neg">-57.1%</td>
+        <td class="num">R$ 499,50 → R$ 62,78</td>
+        <td class="num delta-neg">-87.4%</td>
+      </tr>
       <tr class="row-critico" data-rca="JOAO GABRIEL">
         <td class="col-cliente"><span class="nome-fantasia">CRYSTAL PLAZA MARISTA</span><span class="nome-razao">JKP PLAZA HOTEL LTDA</span></td>
         <td class="col-rca">JOAO GABRIEL</td>
@@ -1453,6 +1750,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 2.556,22 → R$ 2.134,61</td>
         <td class="num delta-neg">-16.5%</td>
       </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. ARROBA</span><span class="nome-razao">C N M DAVID EIRELI - ME</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">0,7 → 0,3</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">3,0 → 2,0</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">R$ 799,38 → R$ 384,36</td>
+        <td class="num delta-neg">-51.9%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE FRANGAO</span><span class="nome-razao">MARIA REGINA DA SILVA 00476256194</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,7 → 2,3</td>
+        <td class="num delta-neg">-12.5%</td>
+        <td class="num">8,0 → 6,4</td>
+        <td class="num delta-neg">-19.6%</td>
+        <td class="num">R$ 2.055,94 → R$ 1.646,99</td>
+        <td class="num delta-neg">-19.9%</td>
+      </tr>
       <tr class="row-critico" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">CSC ALIMENTACAO</span><span class="nome-razao">CSC ALIMENTACAO LTDA</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -1463,6 +1782,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-2.5%</td>
         <td class="num">R$ 1.358,23 → R$ 951,48</td>
         <td class="num delta-neg">-29.9%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. JERUSALEM</span><span class="nome-razao">PATRICIA COELHO DA SILVA 01215541120</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">4,3 → 3,0</td>
+        <td class="num delta-neg">-30.8%</td>
+        <td class="num">8,4 → 5,3</td>
+        <td class="num delta-neg">-36.4%</td>
+        <td class="num">R$ 2.392,04 → R$ 2.000,51</td>
+        <td class="num delta-neg">-16.4%</td>
       </tr>
       <tr class="row-critico" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">MERCEARIA TERRA BELLA II</span><span class="nome-razao">MERCEARIA TERRA BELLA II LTDA</span></td>
@@ -1475,6 +1805,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 845,12 → R$ 467,17</td>
         <td class="num delta-neg">-44.7%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">BLACK CARNES</span><span class="nome-razao">BLACK CARNES LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">1,7 → 1,0</td>
+        <td class="num delta-neg">-40.0%</td>
+        <td class="num">3,6 → 2,0</td>
+        <td class="num delta-neg">-44.4%</td>
+        <td class="num">R$ 802,25 → R$ 434,58</td>
+        <td class="num delta-neg">-45.8%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">MARI PAES PANIF.</span><span class="nome-razao">52.875.778 PATRICIA ROSA DOS REIS</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,7 → 1,7</td>
+        <td class="num delta-neg">-37.5%</td>
+        <td class="num">2,5 → 1,8</td>
+        <td class="num delta-neg">-28.0%</td>
+        <td class="num">R$ 796,44 → R$ 433,05</td>
+        <td class="num delta-neg">-45.6%</td>
+      </tr>
       <tr class="row-critico" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">EMPORIO WS CASA DE CARNE</span><span class="nome-razao">49.114.524 WESLEY VIEIRA DOS SANTOS</span></td>
         <td class="col-rca">WESLEY</td>
@@ -1485,6 +1837,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-10.0%</td>
         <td class="num">R$ 1.609,59 → R$ 1.248,56</td>
         <td class="num delta-neg">-22.4%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">MERCADINHO VILA BOA 2</span><span class="nome-razao">MATHEUS RODRIGUES DOS SANTOS LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">1,3 → 0,7</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">2,8 → 2,0</td>
+        <td class="num delta-neg">-27.3%</td>
+        <td class="num">R$ 570,53 → R$ 209,57</td>
+        <td class="num delta-neg">-63.3%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">MERCEARIA OLIVEIRA</span><span class="nome-razao">EDINALVA ALVES DE OLIVEIRA 00269435140</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">1,7 → 1,0</td>
+        <td class="num delta-neg">-40.0%</td>
+        <td class="num">2,6 → 1,7</td>
+        <td class="num delta-neg">-35.9%</td>
+        <td class="num">R$ 511,64 → R$ 164,71</td>
+        <td class="num delta-neg">-67.8%</td>
       </tr>
       <tr class="row-critico" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">REPUBLICA DA SAUDE COM E DIST DE PROD AL</span><span class="nome-razao">REPUBLICA DA SAUDE COM E DIST DE PROD AL</span></td>
@@ -1518,6 +1892,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-14.3%</td>
         <td class="num">R$ 476,59 → R$ 144,40</td>
         <td class="num delta-neg">-69.7%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUPER REAL</span><span class="nome-razao">SUPER REAL LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,7 → 1,0</td>
+        <td class="num delta-neg">-62.5%</td>
+        <td class="num">3,2 → 2,3</td>
+        <td class="num delta-neg">-28.2%</td>
+        <td class="num">R$ 544,04 → R$ 212,37</td>
+        <td class="num delta-neg">-61.0%</td>
       </tr>
       <tr class="row-critico" data-rca="JOAO GABRIEL">
         <td class="col-cliente"><span class="nome-fantasia">MACFREITAS</span><span class="nome-razao">MACFREITAS PARTICIPAÇÕES ALIMENTÍCIAS LTDA</span></td>
@@ -1574,6 +1959,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 380,98 → R$ 72,72</td>
         <td class="num delta-neg">-80.9%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. SERRA DOURADA</span><span class="nome-razao">SUPERMERCADO SERRA DOURADA LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">1,7 → 1,0</td>
+        <td class="num delta-neg">-40.0%</td>
+        <td class="num">3,0 → 1,3</td>
+        <td class="num delta-neg">-55.6%</td>
+        <td class="num">R$ 594,83 → R$ 290,67</td>
+        <td class="num delta-neg">-51.1%</td>
+      </tr>
       <tr class="row-critico" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">POLOS GRILL RESTAURANTE E CHOPARIA</span><span class="nome-razao">POLOS GRILL RESTAURANTE E CHOPARIA LTDA - EPP</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -1584,6 +1980,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-22.4%</td>
         <td class="num">R$ 5.855,93 → R$ 5.554,24</td>
         <td class="num delta-neg">-5.2%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">PANIF. E MERCEARIA QUITANDAS &amp; CIA</span><span class="nome-razao">PASSOS &amp; SILVA LTDA - ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">4,0 → 2,3</td>
+        <td class="num delta-neg">-41.7%</td>
+        <td class="num">3,8 → 3,0</td>
+        <td class="num delta-neg">-20.0%</td>
+        <td class="num">R$ 763,77 → R$ 464,05</td>
+        <td class="num delta-neg">-39.2%</td>
       </tr>
       <tr class="row-critico" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">DISTRIBUIDORA CAIÇARA</span><span class="nome-razao">GILVANI FRANCESCO ALVARES DA SILVA 95216588191</span></td>
@@ -1596,6 +2003,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 2.148,66 → R$ 1.850,88</td>
         <td class="num delta-neg">-13.9%</td>
       </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">FG MELO COMERCIAL ATACADISTA</span><span class="nome-razao">FG MELO COMERCIAL ATACADISTA LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,7 → 1,0</td>
+        <td class="num delta-neg">-62.5%</td>
+        <td class="num">3,5 → 2,7</td>
+        <td class="num delta-neg">-23.8%</td>
+        <td class="num">R$ 1.452,63 → R$ 1.157,16</td>
+        <td class="num delta-neg">-20.3%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">JANTINHA DO GAGUINHO</span><span class="nome-razao">RESTAURANTE DOIS IRMAOS LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,3 → 1,7</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">4,6 → 3,8</td>
+        <td class="num delta-neg">-17.4%</td>
+        <td class="num">R$ 1.282,55 → R$ 992,00</td>
+        <td class="num delta-neg">-22.7%</td>
+      </tr>
       <tr class="row-critico" data-rca="BERALDO">
         <td class="col-cliente"><span class="nome-fantasia">EMPÓRIO RECANTO</span><span class="nome-razao">M.L CUNHA COMERCIO DE ALIMENTOS LTDA</span></td>
         <td class="col-rca">BERALDO</td>
@@ -1606,6 +2035,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-42.3%</td>
         <td class="num">R$ 372,27 → R$ 89,87</td>
         <td class="num delta-neg">-75.9%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASEIRAO LA EM CASA</span><span class="nome-razao">RESTAURANTE CASEIRAO LA EM CASA LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">5,7 → 4,0</td>
+        <td class="num delta-neg">-29.4%</td>
+        <td class="num">6,1 → 5,3</td>
+        <td class="num delta-neg">-12.8%</td>
+        <td class="num">R$ 2.941,37 → R$ 2.663,00</td>
+        <td class="num delta-neg">-9.5%</td>
       </tr>
       <tr class="row-critico" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">CASA DE FRANGO 2 IRMOSIRMOS</span><span class="nome-razao">57.522.766 JULIA ALVES LEMES</span></td>
@@ -1629,6 +2069,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 559,84 → R$ 291,10</td>
         <td class="num delta-neg">-48.0%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DOS ASSADOS</span><span class="nome-razao">WILMA CAETANO RODRIGUES 99822229100</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,3 → 0,7</td>
+        <td class="num delta-neg">-71.4%</td>
+        <td class="num">2,7 → 1,5</td>
+        <td class="num delta-neg">-44.7%</td>
+        <td class="num">R$ 375,92 → R$ 108,03</td>
+        <td class="num delta-neg">-71.3%</td>
+      </tr>
       <tr class="row-critico" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">MATOS SUP.</span><span class="nome-razao">SUPERMERCADO MATOS LTDA</span></td>
         <td class="col-rca">CELISMAR</td>
@@ -1639,6 +2090,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-16.3%</td>
         <td class="num">R$ 743,76 → R$ 482,72</td>
         <td class="num delta-neg">-35.1%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">MERCEARIA VITORIA</span><span class="nome-razao">MERCEARIA VITORIA EIRELI</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,3 → 1,0</td>
+        <td class="num delta-neg">-57.1%</td>
+        <td class="num">3,0 → 2,0</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">R$ 370,97 → R$ 112,68</td>
+        <td class="num delta-neg">-69.6%</td>
       </tr>
       <tr class="row-critico" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">SUP. ALVORADA</span><span class="nome-razao">GILMAR ROMUALDO DA SILVA - O GOIANO - ME</span></td>
@@ -1662,6 +2124,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.160,60 → R$ 906,40</td>
         <td class="num delta-neg">-21.9%</td>
       </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">IRMAOS ALVES SUP.</span><span class="nome-razao">IRMAOS ALVES SUPERMERCADO LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,3 → 2,3</td>
+        <td class="num delta-neg">-30.0%</td>
+        <td class="num">3,8 → 2,7</td>
+        <td class="num delta-neg">-28.6%</td>
+        <td class="num">R$ 958,37 → R$ 710,27</td>
+        <td class="num delta-neg">-25.9%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">KENIA ROSA DE OLIVEIRA</span><span class="nome-razao">KENIA ROSA DE OLIVEIRA 75302403153</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,0 → 1,3</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">4,8 → 2,2</td>
+        <td class="num delta-neg">-53.4%</td>
+        <td class="num">R$ 804,36 → R$ 557,91</td>
+        <td class="num delta-neg">-30.6%</td>
+      </tr>
       <tr class="row-critico" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">CONVENIENCIA BRASS-EXPRESS</span><span class="nome-razao">ALEXANDRE NERY COELHO ME</span></td>
         <td class="col-rca">CELISMAR</td>
@@ -1672,6 +2156,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-38.8%</td>
         <td class="num">R$ 624,39 → R$ 378,17</td>
         <td class="num delta-neg">-39.4%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE DA NEUZA</span><span class="nome-razao">RESTAURANTE DA NEUZA LTDA - ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">5,0 → 2,7</td>
+        <td class="num delta-neg">-46.7%</td>
+        <td class="num">4,5 → 4,1</td>
+        <td class="num delta-neg">-7.6%</td>
+        <td class="num">R$ 886,04 → R$ 652,78</td>
+        <td class="num delta-neg">-26.3%</td>
       </tr>
       <tr class="row-critico" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">NPP COM.</span><span class="nome-razao">NPP COMÉRCIO DE ALIMENTOS LTDA</span></td>
@@ -1706,6 +2201,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 3.170,86 → R$ 2.956,18</td>
         <td class="num delta-neg">-6.8%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. MAKAYA</span><span class="nome-razao">LUCIMAR QUEIROZ NASCIMENTO - ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">6,3 → 5,0</td>
+        <td class="num delta-neg">-21.1%</td>
+        <td class="num">11,2 → 11,0</td>
+        <td class="num delta-neg">-1.9%</td>
+        <td class="num">R$ 5.261,13 → R$ 5.050,98</td>
+        <td class="num delta-neg">-4.0%</td>
+      </tr>
       <tr class="row-critico" data-rca="BERALDO">
         <td class="col-cliente"><span class="nome-fantasia">REI FORTE MERCEARIA</span><span class="nome-razao">ELIS REGINA LOPES DOS SANTOS MARTINS 97115487120</span></td>
         <td class="col-rca">BERALDO</td>
@@ -1739,6 +2245,39 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 829,02 → R$ 637,72</td>
         <td class="num delta-neg">-23.1%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">SUPER RIOS SUP.</span><span class="nome-razao">SUPER RIOS SUPERMERCADO LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,7 → 1,7</td>
+        <td class="num delta-neg">-37.5%</td>
+        <td class="num">3,8 → 2,6</td>
+        <td class="num delta-neg">-30.7%</td>
+        <td class="num">R$ 663,20 → R$ 472,18</td>
+        <td class="num delta-neg">-28.8%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">MERCADINHO VILA BOA</span><span class="nome-razao">MERCADINHO VILA BOA LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,3 → 2,7</td>
+        <td class="num delta-neg">-20.0%</td>
+        <td class="num">9,4 → 7,5</td>
+        <td class="num delta-neg">-20.2%</td>
+        <td class="num">R$ 2.823,12 → R$ 2.636,31</td>
+        <td class="num delta-neg">-6.6%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">MERCEARIA ODAIR</span><span class="nome-razao">33.608.708 ODAIR OLIVEIRA DA CRUZ</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">3,3 → 2,0</td>
+        <td class="num delta-neg">-40.0%</td>
+        <td class="num">3,4 → 2,8</td>
+        <td class="num delta-neg">-16.7%</td>
+        <td class="num">R$ 753,50 → R$ 574,97</td>
+        <td class="num delta-neg">-23.7%</td>
+      </tr>
       <tr class="row-critico" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">MERCEARIA 3M</span><span class="nome-razao">JOSE NIUTON RODRIGUES 26215152315 </span></td>
         <td class="col-rca">CELISMAR</td>
@@ -1771,6 +2310,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-28.6%</td>
         <td class="num">R$ 446,17 → R$ 280,06</td>
         <td class="num delta-neg">-37.2%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">JC DISTRIBUIDORA DE BEBIDAS</span><span class="nome-razao">JC DISTRIBUIDORA DE BEBIDAS LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,3 → 1,3</td>
+        <td class="num delta-neg">-42.9%</td>
+        <td class="num">3,6 → 2,5</td>
+        <td class="num delta-neg">-30.0%</td>
+        <td class="num">R$ 476,84 → R$ 312,52</td>
+        <td class="num delta-neg">-34.5%</td>
       </tr>
       <tr class="row-critico" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">PANIF. LUZ DO AMANHECER</span><span class="nome-razao">57.659.467 MARIA MARCIA SOUZA SILVA</span></td>
@@ -1849,6 +2399,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.320,34 → R$ 1.188,76</td>
         <td class="num delta-neg">-10.0%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">ACOUGUE MARANHAO</span><span class="nome-razao">51.207.227 JOSE AUGUSTO DOS SANTOS</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,0 → 1,3</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">2,7 → 1,5</td>
+        <td class="num delta-neg">-43.7%</td>
+        <td class="num">R$ 323,85 → R$ 193,70</td>
+        <td class="num delta-neg">-40.2%</td>
+      </tr>
       <tr class="row-critico" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">TING PORTAL SUL</span><span class="nome-razao">TING PORTAL SUL LTDA</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -1859,6 +2420,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-18.6%</td>
         <td class="num">R$ 2.102,58 → R$ 1.972,95</td>
         <td class="num delta-neg">-6.2%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">LANCHONETE B MAIS</span><span class="nome-razao">ELIZANGELA VIEIRA DE SOUZA 86998552149</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">1,3 → 1,0</td>
+        <td class="num delta-neg">-25.0%</td>
+        <td class="num">1,5 → 1,3</td>
+        <td class="num delta-neg">-11.1%</td>
+        <td class="num">R$ 268,67 → R$ 141,43</td>
+        <td class="num delta-neg">-47.4%</td>
       </tr>
       <tr class="row-critico" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">GLEIDSON OLIVEIRA LINO</span><span class="nome-razao">GLEIDSON OLIVEIRA LINO</span></td>
@@ -1904,6 +2476,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.860,45 → R$ 1.767,82</td>
         <td class="num delta-neg">-5.0%</td>
       </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">ROYAL DISTRIBUIDORA</span><span class="nome-razao">C P BARBOSA ROYAL DISTRIBUIDORA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,0 → 1,3</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">2,0 → 1,8</td>
+        <td class="num delta-neg">-12.5%</td>
+        <td class="num">R$ 264,69 → R$ 173,05</td>
+        <td class="num delta-neg">-34.6%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUPERMERCADO IMPERIAL</span><span class="nome-razao">ROCHA SILVA EM GERAL LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">4,7 → 4,3</td>
+        <td class="num delta-neg">-7.1%</td>
+        <td class="num">6,1 → 4,2</td>
+        <td class="num delta-neg">-31.1%</td>
+        <td class="num">R$ 735,17 → R$ 646,80</td>
+        <td class="num delta-neg">-12.0%</td>
+      </tr>
       <tr class="row-critico" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNES 2 IRMAOS</span><span class="nome-razao">THAIS CARDOSO DE OLIVEIRA - CASA DE CARNE DOIS IRMAOS - ME</span></td>
         <td class="col-rca">WESLEY</td>
@@ -1948,6 +2542,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.634,71 → R$ 1.561,47</td>
         <td class="num delta-neg">-4.5%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNES E DISTRIBUIDORA LAGOINHA</span><span class="nome-razao">58.437.462 SEBASTIAO BRAZ DE OLIVEIRA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">1,7 → 1,0</td>
+        <td class="num delta-neg">-40.0%</td>
+        <td class="num">2,8 → 1,7</td>
+        <td class="num delta-neg">-40.5%</td>
+        <td class="num">R$ 392,32 → R$ 320,49</td>
+        <td class="num delta-neg">-18.3%</td>
+      </tr>
       <tr class="row-critico" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">DEPOSITO DE GAS MARANHAO</span><span class="nome-razao">PAGUE MENOS GAS E AGUA MINERAL LTDA</span></td>
         <td class="col-rca">WESLEY</td>
@@ -1969,6 +2574,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-50.0%</td>
         <td class="num">R$ 183,53 → R$ 119,03</td>
         <td class="num delta-neg">-35.1%</td>
+      </tr>
+      <tr class="row-critico" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE SABOROSA</span><span class="nome-razao">61.970.453 ANNA FLAVIA BORGES FRANCO</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">2,3 → 2,0</td>
+        <td class="num delta-neg">-14.3%</td>
+        <td class="num">1,9 → 1,5</td>
+        <td class="num delta-neg">-19.2%</td>
+        <td class="num">R$ 2.942,10 → R$ 2.890,63</td>
+        <td class="num delta-neg">-1.7%</td>
+      </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNE PRIMAVERA</span><span class="nome-razao">SAIDE FERNANDES DE OLIVEIRA 90759222134</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">1,3 → 1,0</td>
+        <td class="num delta-neg">-25.0%</td>
+        <td class="num">1,5 → 1,0</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">R$ 247,85 → R$ 200,00</td>
+        <td class="num delta-neg">-19.3%</td>
       </tr>
       <tr class="row-critico" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">MERCEARIA SANTOS</span><span class="nome-razao">ANTONIA ROSELI SILVA DO ESPIRITO SANTOS</span></td>
@@ -2036,6 +2663,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 756,89 → R$ 745,87</td>
         <td class="num delta-neg">-1.5%</td>
       </tr>
+      <tr class="row-critico" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">ELIZABETH FRIOS</span><span class="nome-razao">56.026.079 ELIZABETH RIBEIRO DE SOUZA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-critico">Queda nas 3 métricas</span></td>
+        <td class="num">4,7 → 3,7</td>
+        <td class="num delta-neg">-21.4%</td>
+        <td class="num">5,7 → 4,1</td>
+        <td class="num delta-neg">-28.4%</td>
+        <td class="num">R$ 1.924,37 → R$ 1.915,99</td>
+        <td class="num delta-neg">-0.4%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">RONI FRIOS</span><span class="nome-razao">RONI ALIMENTOS EIRELI</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">3,3 → 2,7</td>
+        <td class="num delta-neg">-20.0%</td>
+        <td class="num">5,0 → 6,0</td>
+        <td class="num delta-pos">+20.0%</td>
+        <td class="num">R$ 28.115,81 → R$ 11.003,57</td>
+        <td class="num delta-neg">-60.9%</td>
+      </tr>
       <tr class="row-atencao" data-rca="JOAO GABRIEL">
         <td class="col-cliente"><span class="nome-fantasia">BISTROGONOFE</span><span class="nome-razao">BISTROGONOFE COMERCIO LTDA</span></td>
         <td class="col-rca">JOAO GABRIEL</td>
@@ -2047,6 +2696,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 11.601,46 → R$ 941,62</td>
         <td class="num delta-neg">-91.9%</td>
       </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">VILA SAO JOSE BENTO COTTOLENGO</span><span class="nome-razao">VILA SAO JOSE BENTO COTTOLENGO</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">5,7 → 5,3</td>
+        <td class="num delta-neg">-5.9%</td>
+        <td class="num">5,8 → 6,9</td>
+        <td class="num delta-pos">+18.1%</td>
+        <td class="num">R$ 16.336,35 → R$ 8.321,86</td>
+        <td class="num delta-neg">-49.1%</td>
+      </tr>
       <tr class="row-atencao" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUPER PARAISO</span><span class="nome-razao">VAREJISTA SUPER PARAISO LTDA</span></td>
         <td class="col-rca">WESLEY</td>
@@ -2057,6 +2717,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+6.1%</td>
         <td class="num">R$ 12.208,25 → R$ 4.626,20</td>
         <td class="num delta-neg">-62.1%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">JAIME SUP.</span><span class="nome-razao">SUPERMERCADO JAIME LTDA - EPP</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">6,3 → 4,7</td>
+        <td class="num delta-neg">-26.3%</td>
+        <td class="num">24,9 → 28,0</td>
+        <td class="num delta-pos">+12.2%</td>
+        <td class="num">R$ 51.698,34 → R$ 45.676,73</td>
+        <td class="num delta-neg">-11.6%</td>
       </tr>
       <tr class="row-atencao" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUPER DIA</span><span class="nome-razao">SUPER SILVA LTDA</span></td>
@@ -2079,6 +2750,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+23.6%</td>
         <td class="num">R$ 24.205,57 → R$ 18.811,54</td>
         <td class="num delta-neg">-22.3%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUPERMECADO POPULAR</span><span class="nome-razao">ALIZETE MONTEIRO FARIA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">6,3 → 4,3</td>
+        <td class="num delta-neg">-31.6%</td>
+        <td class="num">9,6 → 9,7</td>
+        <td class="num delta-pos">+1.2%</td>
+        <td class="num">R$ 11.078,72 → R$ 7.139,01</td>
+        <td class="num delta-neg">-35.6%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">TDS ALIMENTOS</span><span class="nome-razao">50.198.903 DENISE VALERIA ALVES</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">9,7 → 7,0</td>
+        <td class="num delta-neg">-27.6%</td>
+        <td class="num">2,4 → 3,7</td>
+        <td class="num delta-pos">+56.1%</td>
+        <td class="num">R$ 9.755,66 → R$ 6.005,22</td>
+        <td class="num delta-neg">-38.4%</td>
       </tr>
       <tr class="row-atencao" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">SUPER FAZENDAO</span><span class="nome-razao">SUPER FAZENDAO LTDA</span></td>
@@ -2113,6 +2806,39 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 11.764,29 → R$ 8.331,26</td>
         <td class="num delta-neg">-29.2%</td>
       </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. SOL E MAR</span><span class="nome-razao">REZENDE E XAVIER LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">6,0 → 4,7</td>
+        <td class="num delta-neg">-22.2%</td>
+        <td class="num">6,5 → 6,7</td>
+        <td class="num delta-pos">+3.3%</td>
+        <td class="num">R$ 11.549,91 → R$ 8.416,78</td>
+        <td class="num delta-neg">-27.1%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. MARINHO</span><span class="nome-razao">JVD COMERCIO ALIMENTOS LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">7,3 → 5,3</td>
+        <td class="num delta-neg">-27.3%</td>
+        <td class="num">8,0 → 8,2</td>
+        <td class="num delta-pos">+2.5%</td>
+        <td class="num">R$ 5.988,91 → R$ 3.027,42</td>
+        <td class="num delta-neg">-49.4%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">PETISCOS KIBE MANIA</span><span class="nome-razao">PETISCOS KIBE MANIA LTDA - ME</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">3,0 → 2,0</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">4,3 → 4,3</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">R$ 17.350,17 → R$ 14.473,46</td>
+        <td class="num delta-neg">-16.6%</td>
+      </tr>
       <tr class="row-atencao" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">SUPERMERCADO LAR FELIZ</span><span class="nome-razao">VB COMERCIO DE ALIMENTOS LTDA</span></td>
         <td class="col-rca">FABIANO</td>
@@ -2146,6 +2872,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 27.285,91 → R$ 25.107,43</td>
         <td class="num delta-neg">-8.0%</td>
       </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">BAR ESPETINHO E JANTINHA DO MAJOR</span><span class="nome-razao">WANDERLEY JOSE DE PAULA MIRANDA 59064340</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">9,3 → 8,7</td>
+        <td class="num delta-neg">-7.1%</td>
+        <td class="num">7,3 → 8,4</td>
+        <td class="num delta-pos">+15.1%</td>
+        <td class="num">R$ 9.543,73 → R$ 7.397,79</td>
+        <td class="num delta-neg">-22.5%</td>
+      </tr>
       <tr class="row-atencao" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">ECONOMIA SUP.</span><span class="nome-razao">AP SILVA SUPERMERCADO EIRELI</span></td>
         <td class="col-rca">CELISMAR</td>
@@ -2156,6 +2893,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-45.8%</td>
         <td class="num">R$ 3.377,42 → R$ 1.344,67</td>
         <td class="num delta-neg">-60.2%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">BEEFALO DISTRIBUIDORA DE CARNES</span><span class="nome-razao">BEEFALO INDUSTRIA E COMERCIO DE PROTEINA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">2,3 → 3,0</td>
+        <td class="num delta-pos">+28.6%</td>
+        <td class="num">2,7 → 1,6</td>
+        <td class="num delta-neg">-42.7%</td>
+        <td class="num">R$ 53.996,57 → R$ 51.995,68</td>
+        <td class="num delta-neg">-3.7%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. ATLANTA</span><span class="nome-razao">CHARLLES STEFFANNE TOSTA GONCALVES</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">12,3 → 9,7</td>
+        <td class="num delta-neg">-21.6%</td>
+        <td class="num">14,8 → 19,9</td>
+        <td class="num delta-pos">+34.6%</td>
+        <td class="num">R$ 12.483,32 → R$ 10.529,23</td>
+        <td class="num delta-neg">-15.7%</td>
       </tr>
       <tr class="row-atencao" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE E LANCHONETE QUERO +</span><span class="nome-razao">RAIMUNDO NONATO 58118616134</span></td>
@@ -2179,6 +2938,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 12.177,10 → R$ 10.512,48</td>
         <td class="num delta-neg">-13.7%</td>
       </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">TATA GASTRO BAR</span><span class="nome-razao">TATA GASTRO BAR LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">2,7 → 0,3</td>
+        <td class="num delta-neg">-87.5%</td>
+        <td class="num">3,0 → 3,0</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">R$ 1.759,13 → R$ 279,37</td>
+        <td class="num delta-neg">-84.1%</td>
+      </tr>
       <tr class="row-atencao" data-rca="JOAO GABRIEL">
         <td class="col-cliente"><span class="nome-fantasia">PANIF. MUNDIAL</span><span class="nome-razao">FORMPAN INDUSTRIA DE PAO LTDA</span></td>
         <td class="col-rca">JOAO GABRIEL</td>
@@ -2200,6 +2970,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+87.9%</td>
         <td class="num">R$ 3.883,82 → R$ 2.657,72</td>
         <td class="num delta-neg">-31.6%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. MARINHO</span><span class="nome-razao">SAN MARINO COMERCIO VAREJISTA LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">6,7 → 5,3</td>
+        <td class="num delta-neg">-20.0%</td>
+        <td class="num">7,8 → 8,0</td>
+        <td class="num delta-pos">+3.2%</td>
+        <td class="num">R$ 5.314,24 → R$ 4.106,62</td>
+        <td class="num delta-neg">-22.7%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">MERCEARIA DIAS</span><span class="nome-razao">IVAN DIAS DA COSTA ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">2,7 → 3,3</td>
+        <td class="num delta-pos">+25.0%</td>
+        <td class="num">8,6 → 7,0</td>
+        <td class="num delta-neg">-18.8%</td>
+        <td class="num">R$ 4.382,51 → R$ 3.285,20</td>
+        <td class="num delta-neg">-25.0%</td>
       </tr>
       <tr class="row-atencao" data-rca="BERALDO">
         <td class="col-cliente"><span class="nome-fantasia">GARFFUS RESTAURANTE</span><span class="nome-razao">GARFFUS RESTAURANTE LTDA</span></td>
@@ -2234,6 +3026,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.649,78 → R$ 689,96</td>
         <td class="num delta-neg">-58.2%</td>
       </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE DA LUCIA</span><span class="nome-razao">LUCIMARA CECILIA RIOS MENDES - ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">10,3 → 7,0</td>
+        <td class="num delta-neg">-32.3%</td>
+        <td class="num">3,5 → 4,0</td>
+        <td class="num delta-pos">+15.1%</td>
+        <td class="num">R$ 3.424,08 → R$ 2.471,30</td>
+        <td class="num delta-neg">-27.8%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">SUPERMERCADO BARATAO</span><span class="nome-razao">SUPERMERCADO MWV LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">1,7 → 1,0</td>
+        <td class="num delta-neg">-40.0%</td>
+        <td class="num">4,6 → 5,0</td>
+        <td class="num delta-pos">+8.7%</td>
+        <td class="num">R$ 1.656,96 → R$ 714,50</td>
+        <td class="num delta-neg">-56.9%</td>
+      </tr>
       <tr class="row-atencao" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE PAIOL</span><span class="nome-razao">DEBORA NAYANA PORTO SILVA - ME</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -2245,6 +3059,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 3.499,43 → R$ 2.711,51</td>
         <td class="num delta-neg">-22.5%</td>
       </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">LANCHONETE E RESTAURANTE PARADA OBRIGATO</span><span class="nome-razao">RODRIGUES LANCHONETE E RESTAURANTE LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">3,0 → 1,7</td>
+        <td class="num delta-neg">-44.4%</td>
+        <td class="num">2,6 → 3,0</td>
+        <td class="num delta-pos">+17.4%</td>
+        <td class="num">R$ 1.328,55 → R$ 582,17</td>
+        <td class="num delta-neg">-56.2%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CENTRAL CARNES</span><span class="nome-razao">FABIO MARQUES DE PAULA - ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">5,3 → 4,3</td>
+        <td class="num delta-neg">-18.8%</td>
+        <td class="num">6,6 → 8,6</td>
+        <td class="num delta-pos">+30.0%</td>
+        <td class="num">R$ 4.611,58 → R$ 3.875,64</td>
+        <td class="num delta-neg">-16.0%</td>
+      </tr>
       <tr class="row-atencao" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">PANIF. E MERCEARIA IMPERIO DOS PAE</span><span class="nome-razao">CLEUBER JUNIO DE ALCANTARA 50875604153</span></td>
         <td class="col-rca">FABIANO</td>
@@ -2255,6 +3091,39 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+1.7%</td>
         <td class="num">R$ 2.395,35 → R$ 1.672,22</td>
         <td class="num delta-neg">-30.2%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUPERMERCADO MARINHO</span><span class="nome-razao">EMPORIO SM LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">8,3 → 6,7</td>
+        <td class="num delta-neg">-20.0%</td>
+        <td class="num">7,7 → 10,5</td>
+        <td class="num delta-pos">+36.7%</td>
+        <td class="num">R$ 8.962,85 → R$ 8.332,73</td>
+        <td class="num delta-neg">-7.0%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">MERCEARIA ARTE CAIPIRA</span><span class="nome-razao">RP DA SILVA RESTAURANTE E MERCEARIA ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">3,3 → 3,3</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">8,2 → 7,1</td>
+        <td class="num delta-neg">-13.4%</td>
+        <td class="num">R$ 3.727,47 → R$ 3.116,84</td>
+        <td class="num delta-neg">-16.4%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUPER SILVA</span><span class="nome-razao">SUPER SILVA MERCERIA EIRELI</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">3,0 → 3,3</td>
+        <td class="num delta-pos">+11.1%</td>
+        <td class="num">10,4 → 9,6</td>
+        <td class="num delta-neg">-8.1%</td>
+        <td class="num">R$ 2.305,92 → R$ 1.716,12</td>
+        <td class="num delta-neg">-25.6%</td>
       </tr>
       <tr class="row-atencao" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">DELL SAMPAIO RESTAURANTE</span><span class="nome-razao">DELL SAMPAIO RESTAURANTE LTDA</span></td>
@@ -2288,6 +3157,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-35.7%</td>
         <td class="num">R$ 1.912,49 → R$ 1.339,73</td>
         <td class="num delta-neg">-29.9%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUPERMERCADO MARINHO</span><span class="nome-razao">OME COMERCIO DE ALIMENTOS LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">8,3 → 6,3</td>
+        <td class="num delta-neg">-24.0%</td>
+        <td class="num">7,0 → 8,3</td>
+        <td class="num delta-pos">+18.0%</td>
+        <td class="num">R$ 8.915,65 → R$ 8.351,60</td>
+        <td class="num delta-neg">-6.3%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. SERRAZUL</span><span class="nome-razao">A. P. DE SIQUEIRA - SUPERMERCADO SERRAZU</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">4,7 → 5,0</td>
+        <td class="num delta-pos">+7.1%</td>
+        <td class="num">6,4 → 5,8</td>
+        <td class="num delta-neg">-8.8%</td>
+        <td class="num">R$ 2.408,18 → R$ 1.847,47</td>
+        <td class="num delta-neg">-23.3%</td>
       </tr>
       <tr class="row-atencao" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">CG ALIMENTACAO</span><span class="nome-razao">CG ALIMENTAÇÃO LTDA</span></td>
@@ -2388,6 +3279,39 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 3.764,49 → R$ 3.386,03</td>
         <td class="num delta-neg">-10.1%</td>
       </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">PANIF. E LANCHONETE 3M</span><span class="nome-razao">PANIFICADORA E LANCHONETE 3M LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">3,7 → 3,0</td>
+        <td class="num delta-neg">-18.2%</td>
+        <td class="num">3,0 → 3,1</td>
+        <td class="num delta-pos">+3.7%</td>
+        <td class="num">R$ 1.607,27 → R$ 1.247,97</td>
+        <td class="num delta-neg">-22.4%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">MAIS SABOR</span><span class="nome-razao">GRS-PANIFICADORA &amp; LANCHONETE MAIS SABOR EIRELI - ME</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">10,3 → 12,3</td>
+        <td class="num delta-pos">+19.4%</td>
+        <td class="num">5,0 → 4,3</td>
+        <td class="num delta-neg">-14.1%</td>
+        <td class="num">R$ 6.747,18 → R$ 6.392,58</td>
+        <td class="num delta-neg">-5.3%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CHIN SUPERMERCADO</span><span class="nome-razao">31.531.357 MAURICIO ALVELAR DE SOUSA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">2,0 → 0,7</td>
+        <td class="num delta-neg">-66.7%</td>
+        <td class="num">1,5 → 2,0</td>
+        <td class="num delta-pos">+33.3%</td>
+        <td class="num">R$ 547,70 → R$ 194,27</td>
+        <td class="num delta-neg">-64.5%</td>
+      </tr>
       <tr class="row-atencao" data-rca="JOAO GABRIEL">
         <td class="col-cliente"><span class="nome-fantasia">TEMPERO DA FAMILIA</span><span class="nome-razao">FILIPE VIEIRA DE ARAUJO EIRELI - ME</span></td>
         <td class="col-rca">JOAO GABRIEL</td>
@@ -2409,6 +3333,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-33.3%</td>
         <td class="num">R$ 1.428,67 → R$ 1.099,00</td>
         <td class="num delta-neg">-23.1%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNE REAL</span><span class="nome-razao">LUCIMAR DA SILVA OLIVEIRA ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">2,3 → 2,0</td>
+        <td class="num delta-neg">-14.3%</td>
+        <td class="num">1,4 → 1,7</td>
+        <td class="num delta-pos">+16.7%</td>
+        <td class="num">R$ 666,67 → R$ 348,00</td>
+        <td class="num delta-neg">-47.8%</td>
       </tr>
       <tr class="row-atencao" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUP. CONQUISTA</span><span class="nome-razao">SIDNEY ALVES PEREIRA EIRELI</span></td>
@@ -2453,6 +3388,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+7.1%</td>
         <td class="num">R$ 1.045,60 → R$ 771,87</td>
         <td class="num delta-neg">-26.2%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">PENA VERDE BAR</span><span class="nome-razao">PENA VERDE BAR LTDA ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">4,7 → 4,7</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">2,0 → 1,6</td>
+        <td class="num delta-neg">-17.9%</td>
+        <td class="num">R$ 4.228,67 → R$ 3.959,67</td>
+        <td class="num delta-neg">-6.4%</td>
       </tr>
       <tr class="row-atencao" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">SUP. VIEIRA</span><span class="nome-razao">RAIMUNDO ALEXANDRE COSTA NETO</span></td>
@@ -2519,6 +3465,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-26.5%</td>
         <td class="num">R$ 2.147,98 → R$ 1.912,51</td>
         <td class="num delta-neg">-11.0%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">LUCINHA BAR E RESTAURANTE</span><span class="nome-razao">DEIRELUCE ROCHA FERREIRA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">2,0 → 2,3</td>
+        <td class="num delta-pos">+16.7%</td>
+        <td class="num">6,0 → 4,6</td>
+        <td class="num delta-neg">-23.8%</td>
+        <td class="num">R$ 776,29 → R$ 541,17</td>
+        <td class="num delta-neg">-30.3%</td>
       </tr>
       <tr class="row-atencao" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">SUP. BOM PRECO</span><span class="nome-razao">MF COMERCIO DE SECOS E MOLHADOS LTDA</span></td>
@@ -2652,6 +3609,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 295,38 → R$ 113,78</td>
         <td class="num delta-neg">-61.5%</td>
       </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">LA CASA</span><span class="nome-razao">LA CASA LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">6,3 → 5,0</td>
+        <td class="num delta-neg">-21.1%</td>
+        <td class="num">6,9 → 8,0</td>
+        <td class="num delta-pos">+16.0%</td>
+        <td class="num">R$ 2.269,08 → R$ 2.098,15</td>
+        <td class="num delta-neg">-7.5%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">ESPETINHO DO VILMAR</span><span class="nome-razao">ESPETINHO DO VILMAR BAR E RESTAURANTE LT</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">3,7 → 4,3</td>
+        <td class="num delta-pos">+18.2%</td>
+        <td class="num">5,5 → 5,0</td>
+        <td class="num delta-neg">-9.8%</td>
+        <td class="num">R$ 2.125,94 → R$ 1.955,55</td>
+        <td class="num delta-neg">-8.0%</td>
+      </tr>
       <tr class="row-atencao" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">SUPERMERCADO BOM PRECO</span><span class="nome-razao">MB SUPERMERCADO LTDA</span></td>
         <td class="col-rca">CELISMAR</td>
@@ -2662,6 +3641,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-12.1%</td>
         <td class="num">R$ 3.004,34 → R$ 2.845,16</td>
         <td class="num delta-neg">-5.3%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">EMPORIO DAS CARNES PAIS E FILHOS</span><span class="nome-razao">CASA DE CARNE MORAIS LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">1,7 → 1,3</td>
+        <td class="num delta-neg">-20.0%</td>
+        <td class="num">2,6 → 2,8</td>
+        <td class="num delta-pos">+5.8%</td>
+        <td class="num">R$ 570,33 → R$ 415,35</td>
+        <td class="num delta-neg">-27.2%</td>
       </tr>
       <tr class="row-atencao" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">LINGUICA MINERIM</span><span class="nome-razao">LINGUICA MINERIM LTDA</span></td>
@@ -2684,6 +3674,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+30.0%</td>
         <td class="num">R$ 1.170,70 → R$ 1.019,61</td>
         <td class="num delta-neg">-12.9%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. 4M</span><span class="nome-razao">JOSE DE SOUZA MENEZES FILHO 52197565168</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">1,0 → 1,0</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">2,7 → 1,3</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">R$ 420,40 → R$ 272,07</td>
+        <td class="num delta-neg">-35.3%</td>
       </tr>
       <tr class="row-atencao" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">MERCEARIA ALVES</span><span class="nome-razao">VERONICE VIEIRA TELES 78727405168</span></td>
@@ -2751,6 +3752,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 420,00 → R$ 292,24</td>
         <td class="num delta-neg">-30.4%</td>
       </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNES EMPORIO PALMEIRAS</span><span class="nome-razao">CASA DE CARNES EMPORIO PALMEIRAS EIRELI</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">2,3 → 2,7</td>
+        <td class="num delta-pos">+14.3%</td>
+        <td class="num">5,0 → 3,0</td>
+        <td class="num delta-neg">-40.0%</td>
+        <td class="num">R$ 1.692,46 → R$ 1.566,75</td>
+        <td class="num delta-neg">-7.4%</td>
+      </tr>
       <tr class="row-atencao" data-rca="JOAO GABRIEL">
         <td class="col-cliente"><span class="nome-fantasia">P DI PIZZA</span><span class="nome-razao">LUPITHA COMERCIO DE ALIMENTOS LTDA</span></td>
         <td class="col-rca">JOAO GABRIEL</td>
@@ -2794,6 +3806,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-20.8%</td>
         <td class="num">R$ 556,36 → R$ 445,47</td>
         <td class="num delta-neg">-19.9%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">LANCHONETE ALVORADA</span><span class="nome-razao">LANCHONETE QUEIROZ E OLIVEIRA ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">3,0 → 3,7</td>
+        <td class="num delta-pos">+22.2%</td>
+        <td class="num">1,3 → 1,0</td>
+        <td class="num delta-neg">-25.0%</td>
+        <td class="num">R$ 666,67 → R$ 556,00</td>
+        <td class="num delta-neg">-16.6%</td>
       </tr>
       <tr class="row-atencao" data-rca="BERALDO">
         <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE SABORES</span><span class="nome-razao">SUELENI FERNANDES GOMES 94893438115</span></td>
@@ -2839,6 +3862,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 137,48 → R$ 36,85</td>
         <td class="num delta-neg">-73.2%</td>
       </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">MERCEARIA VITOR</span><span class="nome-razao">RODRIGO VITOR DE SOUZA 88759539100</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">1,3 → 1,0</td>
+        <td class="num delta-neg">-25.0%</td>
+        <td class="num">1,0 → 1,3</td>
+        <td class="num delta-pos">+33.3%</td>
+        <td class="num">R$ 273,33 → R$ 174,50</td>
+        <td class="num delta-neg">-36.2%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">HARLEM HARRISON SANTOS DE SOUZA</span><span class="nome-razao">64.578.359 HARLEM HARRISON SANTOS DE SOUZA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">3,7 → 3,7</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">3,5 → 2,5</td>
+        <td class="num delta-neg">-26.3%</td>
+        <td class="num">R$ 1.304,44 → R$ 1.212,79</td>
+        <td class="num delta-neg">-7.0%</td>
+      </tr>
       <tr class="row-atencao" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">VENCEDOR ATACAREJO</span><span class="nome-razao">HENRIQUE VENCEDOR ATACAREJO LTDA</span></td>
         <td class="col-rca">FABIANO</td>
@@ -2849,6 +3894,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-50.0%</td>
         <td class="num">R$ 255,14 → R$ 165,82</td>
         <td class="num delta-neg">-35.0%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">EMPORIO MESQUITA</span><span class="nome-razao">M A T MESQUITA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">4,0 → 4,0</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">6,2 → 5,7</td>
+        <td class="num delta-neg">-9.3%</td>
+        <td class="num">R$ 1.136,37 → R$ 1.053,41</td>
+        <td class="num delta-neg">-7.3%</td>
       </tr>
       <tr class="row-atencao" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNES E DISTRIBUIDORA DE BEBIDA</span><span class="nome-razao">CASA DE CARNE LIDER LTDA ME</span></td>
@@ -2993,6 +4049,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 17.062,85 → R$ 17.011,26</td>
         <td class="num delta-neg">-0.3%</td>
       </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">TINOCOS RESTAURANTE</span><span class="nome-razao">IMPERIO CASEIRO RESTAURANTE LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">4,0 → 3,3</td>
+        <td class="num delta-neg">-16.7%</td>
+        <td class="num">2,2 → 3,7</td>
+        <td class="num delta-pos">+70.8%</td>
+        <td class="num">R$ 1.280,22 → R$ 1.229,14</td>
+        <td class="num delta-neg">-4.0%</td>
+      </tr>
       <tr class="row-atencao" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">EMPORIO JARDIM MERCEARIA</span><span class="nome-razao">MARIA DALVA ANDRADE JARDIM SANTOS 377459</span></td>
         <td class="col-rca">WESLEY</td>
@@ -3003,6 +4070,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+12.5%</td>
         <td class="num">R$ 151,79 → R$ 105,50</td>
         <td class="num delta-neg">-30.5%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNES THIAGO</span><span class="nome-razao">CASA DE CARNES E ACOUGUE SANTOS EIRELI -</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">0,7 → 0,3</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">1,0 → 1,0</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">R$ 86,67 → R$ 40,67</td>
+        <td class="num delta-neg">-53.1%</td>
       </tr>
       <tr class="row-atencao" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">ESPETINHOS E RESTAURANTE PIMENTEL</span><span class="nome-razao">WP DA COSTA RESTAURANTE E ESPETINHO PIME</span></td>
@@ -3047,6 +4125,39 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-20.0%</td>
         <td class="num">R$ 151,48 → R$ 119,18</td>
         <td class="num delta-neg">-21.3%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUPER REGIONAL</span><span class="nome-razao">FRANCISCO CLAUDIO LIMA DOS SANTOS 710225</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">1,7 → 2,0</td>
+        <td class="num delta-pos">+20.0%</td>
+        <td class="num">3,8 → 3,7</td>
+        <td class="num delta-neg">-3.5%</td>
+        <td class="num">R$ 401,47 → R$ 369,61</td>
+        <td class="num delta-neg">-7.9%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">MEGA PAO PANIF.</span><span class="nome-razao">MEGA PAO PANIFICADORA LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">4,3 → 4,3</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">2,9 → 2,4</td>
+        <td class="num delta-neg">-18.4%</td>
+        <td class="num">R$ 860,97 → R$ 829,62</td>
+        <td class="num delta-neg">-3.6%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">JOSYLLALENE</span><span class="nome-razao">64.472.474 JOSYLLENE VALDIELY ROSARIO DE</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">4,3 → 4,0</td>
+        <td class="num delta-neg">-7.7%</td>
+        <td class="num">9,3 → 10,2</td>
+        <td class="num delta-pos">+9.2%</td>
+        <td class="num">R$ 2.995,76 → R$ 2.965,75</td>
+        <td class="num delta-neg">-1.0%</td>
       </tr>
       <tr class="row-atencao" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">PANIF. PAO DOURADO</span><span class="nome-razao">GLEIDE ALICE NEVES-ME</span></td>
@@ -3103,6 +4214,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 676,18 → R$ 664,98</td>
         <td class="num delta-neg">-1.7%</td>
       </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">ATACADAO DAS CARNES</span><span class="nome-razao">ATACADO DAS CARNES LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">1,3 → 1,7</td>
+        <td class="num delta-pos">+25.0%</td>
+        <td class="num">2,5 → 1,8</td>
+        <td class="num delta-neg">-28.0%</td>
+        <td class="num">R$ 343,85 → R$ 332,95</td>
+        <td class="num delta-neg">-3.2%</td>
+      </tr>
       <tr class="row-atencao" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">MERCEARIA MALU</span><span class="nome-razao">M A DA SILVA</span></td>
         <td class="col-rca">FABIANO</td>
@@ -3113,6 +4235,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+50.0%</td>
         <td class="num">R$ 145,66 → R$ 136,61</td>
         <td class="num delta-neg">-6.2%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. ECONOMIA</span><span class="nome-razao">CARLOS ANTONIO FELIX DE FARIAS 33337209572</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">1,0 → 1,3</td>
+        <td class="num delta-pos">+33.3%</td>
+        <td class="num">2,7 → 1,5</td>
+        <td class="num delta-neg">-43.7%</td>
+        <td class="num">R$ 209,54 → R$ 202,60</td>
+        <td class="num delta-neg">-3.3%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">ASSADOS PREMIER</span><span class="nome-razao">MARCUS VINICIUS RIBEIRO ROCHA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">1,3 → 0,7</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">1,0 → 1,0</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">R$ 193,20 → R$ 189,80</td>
+        <td class="num delta-neg">-1.8%</td>
       </tr>
       <tr class="row-atencao" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">CRYSTAL PLAZA HOTEL</span><span class="nome-razao">CRYSTAL PLAZA HOTEL LTDA</span></td>
@@ -3158,6 +4302,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 648,85 → R$ 677,19</td>
         <td class="num delta-pos">+4.4%</td>
       </tr>
+      <tr class="row-atencao" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNE BOI DE OURO</span><span class="nome-razao">VALMEY PEREIRA DA CONCEICAO 83966730120</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">1,0 → 0,7</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">1,7 → 1,0</td>
+        <td class="num delta-neg">-40.0%</td>
+        <td class="num">R$ 209,50 → R$ 238,10</td>
+        <td class="num delta-pos">+13.7%</td>
+      </tr>
       <tr class="row-atencao" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">OPCAO GAS E BEBIDAS</span><span class="nome-razao">OPCAO VENDAS DE GAS E BEBIDAS LTDA</span></td>
         <td class="col-rca">CELISMAR</td>
@@ -3168,6 +4323,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-10.2%</td>
         <td class="num">R$ 546,37 → R$ 575,28</td>
         <td class="num delta-pos">+5.3%</td>
+      </tr>
+      <tr class="row-atencao" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUPER PONTO COM</span><span class="nome-razao">SUPER PONTO COM LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-atencao">Queda em 2 métricas</span></td>
+        <td class="num">1,3 → 0,7</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">2,8 → 2,5</td>
+        <td class="num delta-neg">-9.1%</td>
+        <td class="num">R$ 287,31 → R$ 342,22</td>
+        <td class="num delta-pos">+19.1%</td>
       </tr>
       <tr class="row-atencao" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">J BARRA PANIF. E LANCHONETE</span><span class="nome-razao">J BARRA PANIFICADORA E LANCHONETE LTDA</span></td>
@@ -3257,6 +4423,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 15.081,75 → R$ 6.644,74</td>
         <td class="num delta-neg">-55.9%</td>
       </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">GOIABAO SUP.</span><span class="nome-razao">VERA CRUZ ALIMENTOS LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,7 → 1,7</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">1,8 → 2,2</td>
+        <td class="num delta-pos">+22.2%</td>
+        <td class="num">R$ 5.395,60 → R$ 3.007,59</td>
+        <td class="num delta-neg">-44.3%</td>
+      </tr>
       <tr class="row-leve" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">MECEARIA SANTA ROSA</span><span class="nome-razao">MERCEARIA SANTA ROSA LTDA - ME</span></td>
         <td class="col-rca">CELISMAR</td>
@@ -3267,6 +4444,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+10.5%</td>
         <td class="num">R$ 3.474,73 → R$ 1.848,48</td>
         <td class="num delta-neg">-46.8%</td>
+      </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">A SABOROSA RESTAURANTE</span><span class="nome-razao">CESARIO DE OLIVEIRA E CIA LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,0 → 2,0</td>
+        <td class="num delta-pos">+100.0%</td>
+        <td class="num">2,7 → 2,7</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">R$ 5.698,88 → R$ 4.309,88</td>
+        <td class="num delta-neg">-24.4%</td>
+      </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">REDE JAIME</span><span class="nome-razao">J.C. JAIME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">5,0 → 5,0</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">14,6 → 17,1</td>
+        <td class="num delta-pos">+16.9%</td>
+        <td class="num">R$ 18.232,73 → R$ 16.910,82</td>
+        <td class="num delta-neg">-7.3%</td>
       </tr>
       <tr class="row-leve" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUPER EMPORIO PEIXOTO</span><span class="nome-razao">SUPERMERCADO EMPORIO PEIXOTO LTDA</span></td>
@@ -3289,6 +4488,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+69.9%</td>
         <td class="num">R$ 3.211,24 → R$ 1.992,96</td>
         <td class="num delta-neg">-37.9%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUPER NACIONAL</span><span class="nome-razao">SUPER NACIONAL LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">17,7 → 19,7</td>
+        <td class="num delta-pos">+11.3%</td>
+        <td class="num">29,4 → 30,3</td>
+        <td class="num delta-pos">+3.0%</td>
+        <td class="num">R$ 31.384,76 → R$ 30.215,34</td>
+        <td class="num delta-neg">-3.7%</td>
       </tr>
       <tr class="row-leve" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">G &amp; R LANCHES</span><span class="nome-razao">G &amp; R LANCHES LTDA</span></td>
@@ -3355,6 +4565,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+20.0%</td>
         <td class="num">R$ 1.238,95 → R$ 804,47</td>
         <td class="num delta-neg">-35.1%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">DELIX FRIOS E CONGELADOS</span><span class="nome-razao">DELIX FRIOS E CONGELADOS LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">4,7 → 5,7</td>
+        <td class="num delta-pos">+21.4%</td>
+        <td class="num">2,6 → 2,8</td>
+        <td class="num delta-pos">+6.8%</td>
+        <td class="num">R$ 1.896,99 → R$ 1.486,53</td>
+        <td class="num delta-neg">-21.6%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. BOM GAROTO</span><span class="nome-razao">SUPERMERCADO BOM GAROTO EIRELI - ME</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">4,0 → 4,3</td>
+        <td class="num delta-pos">+8.3%</td>
+        <td class="num">9,3 → 9,5</td>
+        <td class="num delta-pos">+1.4%</td>
+        <td class="num">R$ 3.168,76 → R$ 2.790,98</td>
+        <td class="num delta-neg">-11.9%</td>
       </tr>
       <tr class="row-leve" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">SUP. LAR FELIZ</span><span class="nome-razao">PV COMERCIO DE ALIMENTOS LTDA</span></td>
@@ -3510,6 +4742,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 117,28 → R$ 34,79</td>
         <td class="num delta-neg">-70.3%</td>
       </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNES PEREIRA</span><span class="nome-razao">KAMILLA ALVES INACIO - ME</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,0 → 1,0</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">1,7 → 2,3</td>
+        <td class="num delta-pos">+40.0%</td>
+        <td class="num">R$ 458,80 → R$ 398,35</td>
+        <td class="num delta-neg">-13.2%</td>
+      </tr>
       <tr class="row-leve" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">CORÍNTIOS EMPREENDIMENTOS</span><span class="nome-razao">CORÍNTIOS EMPREENDIMENTOS LTDA</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -3531,6 +4774,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+43.4%</td>
         <td class="num">R$ 911,53 → R$ 862,61</td>
         <td class="num delta-neg">-5.4%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">LANCHONETE E CONFEITARIA MILLA</span><span class="nome-razao">LANCHONETE E CONFEITARIA MILLA LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">2,3 → 3,0</td>
+        <td class="num delta-pos">+28.6%</td>
+        <td class="num">1,0 → 1,0</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">R$ 479,53 → R$ 432,96</td>
+        <td class="num delta-neg">-9.7%</td>
       </tr>
       <tr class="row-leve" data-rca="BERALDO">
         <td class="col-cliente"><span class="nome-fantasia">SUPERMECADO LAGOAO</span><span class="nome-razao">ERICA ALVEZ DA SILVA 03832378154</span></td>
@@ -3587,6 +4841,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 130,56 → R$ 123,83</td>
         <td class="num delta-neg">-5.2%</td>
       </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">BAR DA MARIA</span><span class="nome-razao">23.129.507 MARIA JOSE LEITE BORGES</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">0,7 → 1,0</td>
+        <td class="num delta-pos">+50.0%</td>
+        <td class="num">1,0 → 1,3</td>
+        <td class="num delta-pos">+33.3%</td>
+        <td class="num">R$ 93,87 → R$ 89,31</td>
+        <td class="num delta-neg">-4.9%</td>
+      </tr>
       <tr class="row-leve" data-rca="BERALDO">
         <td class="col-cliente"><span class="nome-fantasia">DIRETORIA</span><span class="nome-razao">56.968.318 VANILDA MARIA FERNANDES DA SILVA</span></td>
         <td class="col-rca">BERALDO</td>
@@ -3597,6 +4862,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">0.0%</td>
         <td class="num">R$ 121,14 → R$ 116,94</td>
         <td class="num delta-neg">-3.5%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">JP MERCEARIA</span><span class="nome-razao">JOEL RODRIGUES DA SILVA 59162600168</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">0,7 → 0,7</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">1,5 → 2,0</td>
+        <td class="num delta-pos">+33.3%</td>
+        <td class="num">R$ 154,59 → R$ 150,72</td>
+        <td class="num delta-neg">-2.5%</td>
       </tr>
       <tr class="row-leve" data-rca="JOAO GABRIEL">
         <td class="col-cliente"><span class="nome-fantasia">DEDE BURGUER</span><span class="nome-razao">DEDE HAMBURGUERIA COMERCIO DE ALIMENTOS</span></td>
@@ -3631,6 +4907,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 671,50 → R$ 674,28</td>
         <td class="num delta-pos">+0.4%</td>
       </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE DOURADOS</span><span class="nome-razao">56.159.434 ANCELMO DOURADO FILHO</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">0,7 → 0,3</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">1,0 → 1,0</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">R$ 89,27 → R$ 97,08</td>
+        <td class="num delta-pos">+8.7%</td>
+      </tr>
       <tr class="row-leve" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">LA TAVOLA</span><span class="nome-razao">M R GIAROLA E SILVA - ME</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -3652,6 +4939,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-14.7%</td>
         <td class="num">R$ 1.359,92 → R$ 1.373,77</td>
         <td class="num delta-pos">+1.0%</td>
+      </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">JULIANO CAS ASE CARNE</span><span class="nome-razao">58.655.756 JULIANO RODRIGUES DE OLIVEIRA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,0 → 1,7</td>
+        <td class="num delta-pos">+66.7%</td>
+        <td class="num">3,0 → 1,2</td>
+        <td class="num delta-neg">-60.0%</td>
+        <td class="num">R$ 257,07 → R$ 272,10</td>
+        <td class="num delta-pos">+5.8%</td>
       </tr>
       <tr class="row-leve" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUPER ECONOMICO</span><span class="nome-razao">SOARES SUPERMERCADO LTDA</span></td>
@@ -3697,6 +4995,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 317,99 → R$ 342,11</td>
         <td class="num delta-pos">+7.6%</td>
       </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">BELLA MILAO</span><span class="nome-razao">BELLA MILAO PANIFICADORA E CONFEITARIA L</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">3,7 → 3,0</td>
+        <td class="num delta-neg">-18.2%</td>
+        <td class="num">9,4 → 10,9</td>
+        <td class="num delta-pos">+16.3%</td>
+        <td class="num">R$ 7.670,12 → R$ 7.694,57</td>
+        <td class="num delta-pos">+0.3%</td>
+      </tr>
       <tr class="row-leve" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">PANIF. SABOR A</span><span class="nome-razao">13.495.097 GILVAN DE OLIVEIRA SOUZA</span></td>
         <td class="col-rca">FABIANO</td>
@@ -3718,6 +5027,39 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-9.5%</td>
         <td class="num">R$ 1.725,56 → R$ 1.766,74</td>
         <td class="num delta-pos">+2.4%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">ESPETINHO DO VILMAR</span><span class="nome-razao">ESPETINHO DO VILMAR RESTAURANTE E BAR LT</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">3,3 → 3,7</td>
+        <td class="num delta-pos">+10.0%</td>
+        <td class="num">5,7 → 4,7</td>
+        <td class="num delta-neg">-17.1%</td>
+        <td class="num">R$ 1.730,65 → R$ 1.780,67</td>
+        <td class="num delta-pos">+2.9%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">EMPORIO DAS CARNES TRADICAO</span><span class="nome-razao">EMPORIO DAS CARNES TRADICAO</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">2,0 → 1,7</td>
+        <td class="num delta-neg">-16.7%</td>
+        <td class="num">4,0 → 4,2</td>
+        <td class="num delta-pos">+5.0%</td>
+        <td class="num">R$ 405,84 → R$ 457,85</td>
+        <td class="num delta-pos">+12.8%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. DANILLAO</span><span class="nome-razao">OSIVAN RIBEIRO DA SILVA 80889344191</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,3 → 2,0</td>
+        <td class="num delta-pos">+50.0%</td>
+        <td class="num">3,0 → 2,7</td>
+        <td class="num delta-neg">-11.1%</td>
+        <td class="num">R$ 246,64 → R$ 298,85</td>
+        <td class="num delta-pos">+21.2%</td>
       </tr>
       <tr class="row-leve" data-rca="BERALDO">
         <td class="col-cliente"><span class="nome-fantasia">SABORES DO CERRADO</span><span class="nome-razao">SABORES DO CERRADO LTDA</span></td>
@@ -3818,6 +5160,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 73,72 → R$ 137,67</td>
         <td class="num delta-pos">+86.8%</td>
       </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. VALE DO SOL</span><span class="nome-razao">WEMVERSON MARQUES LEITE LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,7 → 1,7</td>
+        <td class="num delta-pos">0.0%</td>
+        <td class="num">2,8 → 2,4</td>
+        <td class="num delta-neg">-14.3%</td>
+        <td class="num">R$ 538,01 → R$ 603,32</td>
+        <td class="num delta-pos">+12.1%</td>
+      </tr>
       <tr class="row-leve" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">CASA DE CERNES AMÉRICA</span><span class="nome-razao">CASA DE CARNES E EMPORIO VIEIRA LTDA</span></td>
         <td class="col-rca">WESLEY</td>
@@ -3839,6 +5192,39 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-8.1%</td>
         <td class="num">R$ 2.201,99 → R$ 2.272,22</td>
         <td class="num delta-pos">+3.2%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">PASTELARIA DO EDI</span><span class="nome-razao">EDIMILSON SOARES DA COSTA 38593327168</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">4,3 → 4,0</td>
+        <td class="num delta-neg">-7.7%</td>
+        <td class="num">2,6 → 2,7</td>
+        <td class="num delta-pos">+2.0%</td>
+        <td class="num">R$ 2.331,15 → R$ 2.404,70</td>
+        <td class="num delta-pos">+3.2%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">ALFA SUP.</span><span class="nome-razao">ALFA SUPERMERCADO LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">3,3 → 4,0</td>
+        <td class="num delta-pos">+20.0%</td>
+        <td class="num">5,5 → 5,3</td>
+        <td class="num delta-neg">-3.0%</td>
+        <td class="num">R$ 770,94 → R$ 869,33</td>
+        <td class="num delta-pos">+12.8%</td>
+      </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNE E DISTRIBUIDORA JK</span><span class="nome-razao">CASA DE CARNE E DISTRIBUIDORA JK LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">0,7 → 1,0</td>
+        <td class="num delta-pos">+50.0%</td>
+        <td class="num">1,5 → 1,0</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">R$ 96,90 → R$ 195,33</td>
+        <td class="num delta-pos">+101.6%</td>
       </tr>
       <tr class="row-leve" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUP. CUNHA</span><span class="nome-razao">SUPERMERCADO C&amp;G LTDA</span></td>
@@ -3939,6 +5325,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 104,57 → R$ 254,14</td>
         <td class="num delta-pos">+143.0%</td>
       </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">EMPORIO SR JOAO</span><span class="nome-razao">JOAO BATISTA ROSA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">0,7 → 2,0</td>
+        <td class="num delta-pos">+200.0%</td>
+        <td class="num">17,0 → 2,7</td>
+        <td class="num delta-neg">-84.3%</td>
+        <td class="num">R$ 931,04 → R$ 1.086,22</td>
+        <td class="num delta-pos">+16.7%</td>
+      </tr>
       <tr class="row-leve" data-rca="BERALDO">
         <td class="col-cliente"><span class="nome-fantasia">EMPORIO &amp; SUPERMERCADO JL</span><span class="nome-razao">EMPORIO &amp; SUPERMERCADO JL LTDA</span></td>
         <td class="col-rca">BERALDO</td>
@@ -3994,6 +5391,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.027,47 → R$ 1.199,59</td>
         <td class="num delta-pos">+16.8%</td>
       </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">DISTRIBUIDORA NAZARIO</span><span class="nome-razao">59.589.872 GABRIELLY MARTINS PEREIRA ROS</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,3 → 2,0</td>
+        <td class="num delta-pos">+50.0%</td>
+        <td class="num">3,2 → 2,0</td>
+        <td class="num delta-neg">-38.5%</td>
+        <td class="num">R$ 553,35 → R$ 730,00</td>
+        <td class="num delta-pos">+31.9%</td>
+      </tr>
       <tr class="row-leve" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUP. ADRIANO</span><span class="nome-razao">CLEIA FERREIRA DA SILVA PEREIRA 01256646</span></td>
         <td class="col-rca">WESLEY</td>
@@ -4015,6 +5423,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-25.0%</td>
         <td class="num">R$ 734,53 → R$ 912,80</td>
         <td class="num delta-pos">+24.3%</td>
+      </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">EMPORIO E CASA DE CARNE POMPOM</span><span class="nome-razao">EMPORIO E CASA DE CARNE POMPOM LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,0 → 1,7</td>
+        <td class="num delta-pos">+66.7%</td>
+        <td class="num">4,7 → 4,6</td>
+        <td class="num delta-neg">-1.4%</td>
+        <td class="num">R$ 494,13 → R$ 694,72</td>
+        <td class="num delta-pos">+40.6%</td>
       </tr>
       <tr class="row-leve" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUP. CASTRO</span><span class="nome-razao">AZIEL ANDRADE DA PURIFICACAO</span></td>
@@ -4060,6 +5479,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.051,10 → R$ 1.279,09</td>
         <td class="num delta-pos">+21.7%</td>
       </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. SILVA</span><span class="nome-razao">SILVA E SILVA LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">14,3 → 14,7</td>
+        <td class="num delta-pos">+2.3%</td>
+        <td class="num">11,7 → 10,6</td>
+        <td class="num delta-neg">-8.9%</td>
+        <td class="num">R$ 7.246,66 → R$ 7.474,94</td>
+        <td class="num delta-pos">+3.2%</td>
+      </tr>
       <tr class="row-leve" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">ROCHA SALGADOS</span><span class="nome-razao">TASSIO DA ROCHA GRIGORIO 03381592157</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -4092,6 +5522,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-23.3%</td>
         <td class="num">R$ 745,28 → R$ 1.009,91</td>
         <td class="num delta-pos">+35.5%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">GYN BEBIDAS</span><span class="nome-razao">EMPÓRIO GYN COMERCIAL LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,3 → 1,7</td>
+        <td class="num delta-pos">+25.0%</td>
+        <td class="num">4,0 → 3,6</td>
+        <td class="num delta-neg">-10.0%</td>
+        <td class="num">R$ 380,89 → R$ 650,39</td>
+        <td class="num delta-pos">+70.8%</td>
       </tr>
       <tr class="row-leve" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">PANIFICADORA PAO DOURADO</span><span class="nome-razao">SOUSA PANIFICACAO LTDA</span></td>
@@ -4159,6 +5600,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 2.118,33 → R$ 2.501,40</td>
         <td class="num delta-pos">+18.1%</td>
       </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">PALMEIRAO</span><span class="nome-razao">PALMEIRAO MULTI ATACAREJO LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,3 → 2,3</td>
+        <td class="num delta-pos">+75.0%</td>
+        <td class="num">6,0 → 3,6</td>
+        <td class="num delta-neg">-40.5%</td>
+        <td class="num">R$ 1.737,85 → R$ 2.137,43</td>
+        <td class="num delta-pos">+23.0%</td>
+      </tr>
       <tr class="row-leve" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">LIMAS LANCHONETE E RESTAURANTE</span><span class="nome-razao">LIMAS LANCHONETE E RESTAURANTE LTDA</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -4169,6 +5621,39 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-9.8%</td>
         <td class="num">R$ 2.987,12 → R$ 3.391,71</td>
         <td class="num delta-pos">+13.5%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">VILLE PAES</span><span class="nome-razao">26.879.485 JEONE PEREIRA CASTILHO</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">1,7 → 2,3</td>
+        <td class="num delta-pos">+40.0%</td>
+        <td class="num">2,0 → 1,4</td>
+        <td class="num delta-neg">-28.6%</td>
+        <td class="num">R$ 428,42 → R$ 860,66</td>
+        <td class="num delta-pos">+100.9%</td>
+      </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNE SKINAO</span><span class="nome-razao">ALCISIO ALVES FERREIRA 31043585168</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">3,0 → 2,3</td>
+        <td class="num delta-neg">-22.2%</td>
+        <td class="num">2,4 → 3,1</td>
+        <td class="num delta-pos">+28.6%</td>
+        <td class="num">R$ 1.377,94 → R$ 1.818,51</td>
+        <td class="num delta-pos">+32.0%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">TOPPE RESTAURANTE E CHURRASCARIA</span><span class="nome-razao">GPS RESTAURANTE E COMÉRCIO DE ALIMENTOS</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">21,7 → 25,7</td>
+        <td class="num delta-pos">+18.5%</td>
+        <td class="num">4,5 → 3,3</td>
+        <td class="num delta-neg">-25.5%</td>
+        <td class="num">R$ 6.453,70 → R$ 6.913,48</td>
+        <td class="num delta-pos">+7.1%</td>
       </tr>
       <tr class="row-leve" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">HUGAO SUP.</span><span class="nome-razao">HUGAO SUPERMERCADO LTDA</span></td>
@@ -4225,6 +5710,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.718,48 → R$ 2.361,05</td>
         <td class="num delta-pos">+37.4%</td>
       </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">ROCHA DISTRIBUIDORA DE BEBIDAS E ALIMENT</span><span class="nome-razao">ROCHA DISTRIBUIDORA DE BEBIDAS E ALIMENTOS EM GERAL LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">2,7 → 2,0</td>
+        <td class="num delta-neg">-25.0%</td>
+        <td class="num">5,9 → 6,0</td>
+        <td class="num delta-pos">+2.1%</td>
+        <td class="num">R$ 934,77 → R$ 1.610,97</td>
+        <td class="num delta-pos">+72.3%</td>
+      </tr>
       <tr class="row-leve" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">FLORESTA BAR E CHOPERIA (DAS 9 AS 17HS)</span><span class="nome-razao">FLORESTA BAR E CHOPERIA LTDA - EPP</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -4246,6 +5742,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-pos">+200.0%</td>
         <td class="num">R$ 3.016,88 → R$ 3.701,08</td>
         <td class="num delta-pos">+22.7%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE GRANDE FAMILIA</span><span class="nome-razao">CLEUDES VILELA ROCHA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">2,0 → 4,3</td>
+        <td class="num delta-pos">+116.7%</td>
+        <td class="num">2,0 → 1,0</td>
+        <td class="num delta-neg">-50.0%</td>
+        <td class="num">R$ 570,33 → R$ 1.264,53</td>
+        <td class="num delta-pos">+121.7%</td>
       </tr>
       <tr class="row-leve" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">SUPERMERCADO SKINAO</span><span class="nome-razao">SUPERMERCADO SKINAO</span></td>
@@ -4269,6 +5776,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 2.506,00 → R$ 3.307,47</td>
         <td class="num delta-pos">+32.0%</td>
       </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNE HELOIM</span><span class="nome-razao">EDILEY GOMES DE LIMA 01778084117</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">4,7 → 3,7</td>
+        <td class="num delta-neg">-21.4%</td>
+        <td class="num">6,6 → 7,9</td>
+        <td class="num delta-pos">+19.1%</td>
+        <td class="num">R$ 3.049,73 → R$ 3.868,15</td>
+        <td class="num delta-pos">+26.8%</td>
+      </tr>
       <tr class="row-leve" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">NP RESTAURANTE</span><span class="nome-razao">N P DE OLIVEIRA - CONVENIENCIA ME</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -4279,6 +5797,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-18.8%</td>
         <td class="num">R$ 2.373,25 → R$ 3.250,48</td>
         <td class="num delta-pos">+37.0%</td>
+      </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNES VITORIA</span><span class="nome-razao">NEILTON PEREIRA DE SOUZA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">5,3 → 6,0</td>
+        <td class="num delta-pos">+12.5%</td>
+        <td class="num">14,2 → 13,0</td>
+        <td class="num delta-neg">-8.8%</td>
+        <td class="num">R$ 6.336,71 → R$ 7.239,49</td>
+        <td class="num delta-pos">+14.2%</td>
       </tr>
       <tr class="row-leve" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">FAVO DE MEL PANIF. E CONFEITARIA</span><span class="nome-razao">FAVO DE MEL PANIFICADORA E CONFEITARIA E</span></td>
@@ -4291,6 +5820,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 650,68 → R$ 1.565,63</td>
         <td class="num delta-pos">+140.6%</td>
       </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE BOM DE GARFO</span><span class="nome-razao">RESTAURANTE BOM DE GARFO PLS CIA LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">0,3 → 2,7</td>
+        <td class="num delta-pos">+700.0%</td>
+        <td class="num">3,0 → 2,5</td>
+        <td class="num delta-neg">-16.7%</td>
+        <td class="num">R$ 158,32 → R$ 1.080,39</td>
+        <td class="num delta-pos">+582.4%</td>
+      </tr>
       <tr class="row-leve" data-rca="FABIANO">
         <td class="col-cliente"><span class="nome-fantasia">PANIF. ESTRELA DOURADA</span><span class="nome-razao">LEIIDIANE DE OLIVEIRA BASTOS DOURADO 03040822527</span></td>
         <td class="col-rca">FABIANO</td>
@@ -4301,6 +5841,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-29.2%</td>
         <td class="num">R$ 1.759,27 → R$ 2.681,35</td>
         <td class="num delta-pos">+52.4%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUPER REAL SUPERMERCADOS</span><span class="nome-razao">RIBEIRO E SILVA COMERCIO DE PRODUTOS ALIMENTICIOS LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">6,0 → 4,7</td>
+        <td class="num delta-neg">-22.2%</td>
+        <td class="num">6,2 → 7,1</td>
+        <td class="num delta-pos">+14.7%</td>
+        <td class="num">R$ 4.624,27 → R$ 5.604,17</td>
+        <td class="num delta-pos">+21.2%</td>
       </tr>
       <tr class="row-leve" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">COME TOME</span><span class="nome-razao">ANDRE GONTIJO TOLDA LTDA</span></td>
@@ -4335,6 +5886,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.808,60 → R$ 2.860,51</td>
         <td class="num delta-pos">+58.2%</td>
       </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">EMPORIO DAS CARNES RODRIGUES</span><span class="nome-razao">H V COM DE CARNES EM GERAL EIRELI ME</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">4,3 → 5,7</td>
+        <td class="num delta-pos">+30.8%</td>
+        <td class="num">13,8 → 11,3</td>
+        <td class="num delta-neg">-18.0%</td>
+        <td class="num">R$ 10.333,74 → R$ 11.447,32</td>
+        <td class="num delta-pos">+10.8%</td>
+      </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE BRASILIA</span><span class="nome-razao">WS RESTAURANTE LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">5,0 → 4,0</td>
+        <td class="num delta-neg">-20.0%</td>
+        <td class="num">6,5 → 7,7</td>
+        <td class="num delta-pos">+17.3%</td>
+        <td class="num">R$ 4.111,40 → R$ 5.269,42</td>
+        <td class="num delta-pos">+28.2%</td>
+      </tr>
       <tr class="row-leve" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">VITAMINA LACERDA</span><span class="nome-razao">COMERCIAL DE PRODUTOS ALIMENTICIOS LACERDA LTDA - EPP</span></td>
         <td class="col-rca">PAULO RONAN</td>
@@ -4345,6 +5918,39 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-24.9%</td>
         <td class="num">R$ 5.736,79 → R$ 6.965,08</td>
         <td class="num delta-pos">+21.4%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">EMPORIO ALPHA</span><span class="nome-razao">H S SOBRINHO DA SILVA EMPORIO DAS CARNES</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">4,7 → 5,3</td>
+        <td class="num delta-pos">+14.3%</td>
+        <td class="num">5,8 → 4,8</td>
+        <td class="num delta-neg">-17.9%</td>
+        <td class="num">R$ 3.329,92 → R$ 4.720,37</td>
+        <td class="num delta-pos">+41.8%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">HIPER MIRANDA</span><span class="nome-razao">HM 3 LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">7,0 → 4,7</td>
+        <td class="num delta-neg">-33.3%</td>
+        <td class="num">12,6 → 14,7</td>
+        <td class="num delta-pos">+16.6%</td>
+        <td class="num">R$ 4.830,78 → R$ 6.263,60</td>
+        <td class="num delta-pos">+29.7%</td>
+      </tr>
+      <tr class="row-leve" data-rca="TIAGO">
+        <td class="col-cliente"><span class="nome-fantasia">CAMELLO SUPER</span><span class="nome-razao">CAMELLO SUPER MERCANTIL LTDA</span></td>
+        <td class="col-rca">TIAGO</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">3,7 → 4,0</td>
+        <td class="num delta-pos">+9.1%</td>
+        <td class="num">7,9 → 4,8</td>
+        <td class="num delta-neg">-38.9%</td>
+        <td class="num">R$ 5.077,65 → R$ 6.670,01</td>
+        <td class="num delta-pos">+31.4%</td>
       </tr>
       <tr class="row-leve" data-rca="PAULO RONAN">
         <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE NOVO SABOR</span><span class="nome-razao">LORD GRILL LTDA</span></td>
@@ -4368,6 +5974,17 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 4.662,21 → R$ 6.365,70</td>
         <td class="num delta-pos">+36.5%</td>
       </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">BELLA MILAO</span><span class="nome-razao">MRT PANIFICADORA, CONFEITARIA E RESTAURA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">3,7 → 5,0</td>
+        <td class="num delta-pos">+36.4%</td>
+        <td class="num">10,8 → 10,6</td>
+        <td class="num delta-neg">-2.0%</td>
+        <td class="num">R$ 3.013,52 → R$ 4.758,76</td>
+        <td class="num delta-pos">+57.9%</td>
+      </tr>
       <tr class="row-leve" data-rca="CELISMAR">
         <td class="col-cliente"><span class="nome-fantasia">RESTAURANTE CANEDUS GRILL</span><span class="nome-razao">LUIS GARRETO DOS REIS LTDA</span></td>
         <td class="col-rca">CELISMAR</td>
@@ -4378,6 +5995,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num delta-neg">-40.0%</td>
         <td class="num">R$ 7.058,23 → R$ 8.827,98</td>
         <td class="num delta-pos">+25.1%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">CASA DE CARNE NOVILHO DE OURO</span><span class="nome-razao">NOVILHO DE OURO CARNES LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">5,0 → 7,0</td>
+        <td class="num delta-pos">+40.0%</td>
+        <td class="num">7,4 → 6,6</td>
+        <td class="num delta-neg">-10.6%</td>
+        <td class="num">R$ 7.434,39 → R$ 9.213,99</td>
+        <td class="num delta-pos">+23.9%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">SUP. SOL E MAR</span><span class="nome-razao">SOL E MAR MERCEARIA LTDA</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">4,7 → 3,3</td>
+        <td class="num delta-neg">-28.6%</td>
+        <td class="num">4,7 → 6,2</td>
+        <td class="num delta-pos">+31.5%</td>
+        <td class="num">R$ 4.973,86 → R$ 6.971,15</td>
+        <td class="num delta-pos">+40.2%</td>
       </tr>
       <tr class="row-leve" data-rca="WESLEY">
         <td class="col-cliente"><span class="nome-fantasia">FREEBOM CASA DE CARNES</span><span class="nome-razao">DANIEL FARIA DA SILVA 01961927144</span></td>
@@ -4401,6 +6040,28 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
         <td class="num">R$ 1.575,32 → R$ 4.553,63</td>
         <td class="num delta-pos">+189.1%</td>
       </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">CONFRARIA DO PEIXE PESCA RESTAURANTE</span><span class="nome-razao">CONFRARIA DO PEIXE PESCA RESTAURANTE</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">3,3 → 4,7</td>
+        <td class="num delta-pos">+40.0%</td>
+        <td class="num">6,8 → 5,9</td>
+        <td class="num delta-neg">-13.9%</td>
+        <td class="num">R$ 1.734,00 → R$ 5.665,30</td>
+        <td class="num delta-pos">+226.7%</td>
+      </tr>
+      <tr class="row-leve" data-rca="JOAO VITOR">
+        <td class="col-cliente"><span class="nome-fantasia">LEIDIANE STIVAL BOLOS, DOCES E SALGADOS</span><span class="nome-razao">LEIDIANE STIVAL BOLOS, DOCES E SALGADOS</span></td>
+        <td class="col-rca">JOAO VITOR</td>
+        <td><span class="pill pill-leve">Queda em 1 métrica</span></td>
+        <td class="num">4,0 → 6,7</td>
+        <td class="num delta-pos">+66.7%</td>
+        <td class="num">5,8 → 5,2</td>
+        <td class="num delta-neg">-10.0%</td>
+        <td class="num">R$ 4.957,77 → R$ 10.679,89</td>
+        <td class="num delta-pos">+115.4%</td>
+      </tr>
       </tbody>
     </table>
   </div>
@@ -4409,7 +6070,7 @@ footer { margin-top: 28px; font-size: 11.5px; color: var(--ink-faint); text-alig
 </div>
 
 <script>
-const RESUMO_POR_RCA = {"todos": {"em_queda": 381, "sumiram": 25, "caiu_3": 141, "caiu_2": 109, "caiu_1": 106, "perda_fat": "R$ -272.592,52", "criticos": 166, "total_clientes": 620}, "WESLEY": {"em_queda": 77, "sumiram": 0, "caiu_3": 31, "caiu_2": 18, "caiu_1": 28, "perda_fat": "R$ -57.292,15", "criticos": 31, "total_clientes": 117}, "CELISMAR": {"em_queda": 96, "sumiram": 11, "caiu_3": 41, "caiu_2": 27, "caiu_1": 17, "perda_fat": "R$ -54.107,48", "criticos": 52, "total_clientes": 141}, "WILLIAN MACEDO": {"em_queda": 1, "sumiram": 1, "caiu_3": 0, "caiu_2": 0, "caiu_1": 0, "perda_fat": "R$ -94,53", "criticos": 1, "total_clientes": 1}, "MATEUS ARIEL": {"em_queda": 1, "sumiram": 1, "caiu_3": 0, "caiu_2": 0, "caiu_1": 0, "perda_fat": "R$ -181,87", "criticos": 1, "total_clientes": 2}, "FABIANO": {"em_queda": 64, "sumiram": 4, "caiu_3": 21, "caiu_2": 23, "caiu_1": 16, "perda_fat": "R$ -41.024,12", "criticos": 25, "total_clientes": 113}, "PAULO RONAN": {"em_queda": 51, "sumiram": 3, "caiu_3": 16, "caiu_2": 16, "caiu_1": 16, "perda_fat": "R$ -44.934,99", "criticos": 19, "total_clientes": 83}, "JOAO GABRIEL": {"em_queda": 38, "sumiram": 5, "caiu_3": 13, "caiu_2": 11, "caiu_1": 9, "perda_fat": "R$ -30.831,50", "criticos": 18, "total_clientes": 78}, "BERALDO": {"em_queda": 53, "sumiram": 0, "caiu_3": 19, "caiu_2": 14, "caiu_1": 20, "perda_fat": "R$ -44.125,88", "criticos": 19, "total_clientes": 81}};
+const RESUMO_POR_RCA = {"todos": {"em_queda": 532, "sumiram": 28, "caiu_3": 196, "caiu_2": 157, "caiu_1": 151, "perda_fat": "R$ -428.111,77", "criticos": 224, "total_clientes": 846}, "CELISMAR": {"em_queda": 96, "sumiram": 11, "caiu_3": 41, "caiu_2": 27, "caiu_1": 17, "perda_fat": "R$ -54.107,48", "criticos": 52, "total_clientes": 141}, "JOAO GABRIEL": {"em_queda": 38, "sumiram": 5, "caiu_3": 13, "caiu_2": 11, "caiu_1": 9, "perda_fat": "R$ -30.831,50", "criticos": 18, "total_clientes": 78}, "PAULO RONAN": {"em_queda": 51, "sumiram": 3, "caiu_3": 16, "caiu_2": 16, "caiu_1": 16, "perda_fat": "R$ -44.934,99", "criticos": 19, "total_clientes": 83}, "TIAGO": {"em_queda": 75, "sumiram": 0, "caiu_3": 33, "caiu_2": 25, "caiu_1": 17, "perda_fat": "R$ -96.804,52", "criticos": 33, "total_clientes": 105}, "BERALDO": {"em_queda": 53, "sumiram": 0, "caiu_3": 19, "caiu_2": 14, "caiu_1": 20, "perda_fat": "R$ -44.125,88", "criticos": 19, "total_clientes": 81}, "JOAO VITOR": {"em_queda": 76, "sumiram": 3, "caiu_3": 22, "caiu_2": 23, "caiu_1": 28, "perda_fat": "R$ -58.714,73", "criticos": 25, "total_clientes": 121}, "FABIANO": {"em_queda": 64, "sumiram": 4, "caiu_3": 21, "caiu_2": 23, "caiu_1": 16, "perda_fat": "R$ -41.024,12", "criticos": 25, "total_clientes": 113}, "WESLEY": {"em_queda": 77, "sumiram": 0, "caiu_3": 31, "caiu_2": 18, "caiu_1": 28, "perda_fat": "R$ -57.292,15", "criticos": 31, "total_clientes": 117}, "MATEUS ARIEL": {"em_queda": 1, "sumiram": 1, "caiu_3": 0, "caiu_2": 0, "caiu_1": 0, "perda_fat": "R$ -181,87", "criticos": 1, "total_clientes": 2}, "WILLIAN MACEDO": {"em_queda": 1, "sumiram": 1, "caiu_3": 0, "caiu_2": 0, "caiu_1": 0, "perda_fat": "R$ -94,53", "criticos": 1, "total_clientes": 1}};
 let filtroSeveridade = "todos";
 let filtroRca = "todos";
 
